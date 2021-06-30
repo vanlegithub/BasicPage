@@ -1,17 +1,20 @@
-*
+*,
+*::before,
+*::after
 {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 body
 {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: rgb(119, 119, 119);
     padding: 20px;
+    box-sizing: border-box;
 }
 header
 {
@@ -22,7 +25,7 @@ header
     height: 95vh;
     clip-path: polygon(0 0, 100% 4%, 100% 90%, 0% 100%);
 }
-.text-box
+.header__text-box
 {
     position: absolute;
     top: 50%;
@@ -30,11 +33,11 @@ header
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.logo
+.header__logo
 {
-    height: 70px;
+    height: 7rem;
 }
-.logo-box
+.header__logo-box
 {
     position: absolute ;
     top: 30px;
@@ -50,17 +53,17 @@ header
     animation-iteration-count: 2;
     animation-delay: 1s;
 }
-.heading-primary_main
+.heading-primary--main
 {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 10px;
 }
-.heading-primary_sub
+.heading-primary--sub
 {
     display: block;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 5px;
 }
@@ -73,10 +76,10 @@ header
     padding: 15px 40px;
     display: inline-block;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 1.6rem;
     position: relative;
 }
-.bottom-white
+.bottom--white
 {
     color: rgb(119, 119, 119);
     background-color: rgb(255, 255, 255);
@@ -106,7 +109,7 @@ header
     transition: all .4s;
 
 }
-.bottom-white::after
+.bottom--white::after
 {
     background-color: rgb(255, 255, 255);
 }
@@ -115,9 +118,9 @@ header
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
-.bottom-animated
+.bottom--animated
 {
-    animation: moveInBottom 1s ease-out 0.75;
+    animation: moveInBottom 0.5s ease-out 0.75;
     animation-fill-mode: backwards;
 }
 @keyframes animationtest 
@@ -150,4 +153,8 @@ header
         opacity: 1;
         transform: translateY(0);
     }
+}
+html
+{
+    font-size: 62.5%;
 }
