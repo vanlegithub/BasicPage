@@ -1,0 +1,153 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgb(119, 119, 119);
+    padding: 20px;
+}
+header
+{
+    background-image: linear-gradient(to right bottom, rgba(93, 92, 97,0.5), rgb(216, 195, 165,0.8)), url("/resources/img/background1.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 4%, 100% 90%, 0% 100%);
+}
+.text-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.logo
+{
+    height: 70px;
+}
+.logo-box
+{
+    position: absolute ;
+    top: 30px;
+    left: 30px;
+}
+.heading-primary
+{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    animation: animationtest;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+}
+.heading-primary_main
+{
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+.heading-primary_sub
+{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.bottom,
+.bottom:link,
+.bottom:visited
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    position: relative;
+}
+.bottom-white
+{
+    color: rgb(119, 119, 119);
+    background-color: rgb(255, 255, 255);
+}
+.bottom:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+.bottom:active
+{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.bottom::after
+{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all .4s;
+
+}
+.bottom-white::after
+{
+    background-color: rgb(255, 255, 255);
+}
+.bottom:hover::after
+{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.bottom-animated
+{
+    animation: moveInBottom 1s ease-out 0.75;
+    animation-fill-mode: backwards;
+}
+@keyframes animationtest 
+{
+    0%
+    {
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+
+    80%
+    {
+        transform: translate(0,-20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes moveInBottom
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
