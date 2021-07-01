@@ -124,6 +124,12 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75;
   animation-fill-mode: backwards; }
 
+.button--blue {
+  background-color: #5d5c61;
+  color: white; }
+  .button--blue::after {
+    background-color: #5d5c61; }
+
 .button-text {
   transition: all .2s; }
   .button-text:link, .button-text:visited {
@@ -206,17 +212,22 @@ body {
   .row .col-3-of-4 {
     width: calc(3*(100%-3*6rem)/4)2*6rem; }
 
-.about-section {
+.section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25rem; }
 
-.section-skills {
-  background-image: linear-gradient(to left top, rgba(216, 195, 165, 0.8), rgba(93, 92, 97, 0.8)), url("../img/background2.jpg");
+.section-socials {
+  background-image: linear-gradient(to left top, rgba(216, 195, 165, 0.8), rgba(93, 92, 97, 0.8)), url("/img/background2.jpg");
   background-size: cover;
   position: relative;
   padding: 20rem 0;
   clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+  margin-top: -20rem; }
+
+.section-skills {
+  background-color: #f7f7f7;
+  padding: 25rem 0 10rem 0;
   margin-top: -20rem; }
 
 .u-center-text {
@@ -275,3 +286,101 @@ body {
   .skill-box:hover {
     cursor: pointer;
     transform: translateY(-1.5rem) scale(1.1); }
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  width: 90%;
+  margin-bottom: -5rem;
+  margin-top: -5rem; }
+  .card__side {
+    color: white;
+    font-size: 2rem;
+    height: 45rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 5rem;
+    overflow: hidden; }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right, #7395ae, #787878); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right, #d8c3a5, #5d5c61); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right, #e7717d, #787878); }
+  .card__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    height: 23rem;
+    clip-path: ellipse(80% 70% at 50% 30%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right, #7395ae, #557a95), url("/img/box1.jpg"); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right, #d8c3a5, #5d5c61), url("/img/box2.jpg"); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right, #e7717d, #787878), url("/img/box3.jpg"); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(115, 149, 174, 0.85), rgba(85, 122, 149, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(216, 195, 165, 0.85), rgba(93, 92, 97, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(231, 113, 125, 0.85), rgba(120, 120, 120, 0.85)); }
+  .card__details {
+    padding: 3rem;
+    color: #787878; }
+    .card__details ul {
+      list-style: none;
+      width: 75%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #dbdbdb; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; }
+  .card__price-box {
+    text-align: center;
+    color: white;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 5rem; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }

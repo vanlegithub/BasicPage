@@ -1,0 +1,164 @@
+.card
+{
+    perspective: 150rem;
+    position: relative;
+    height: 40rem;
+    width: 90%;
+    margin-bottom: -5rem;
+    margin-top: -5rem;
+    &__side
+    {
+        color: $color-white;
+        font-size: 2rem;
+        height: 45rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        border-radius: 5rem;
+        overflow: hidden;
+        &--front
+        {
+            background-color: $color-white;
+        }
+        &--back
+        {
+            background-color: green;
+            transform: rotateY(180deg);
+            &-1
+            {
+                background-image: linear-gradient(to right,$color-blue-mint,$color-text);
+            }
+            &-2
+            {
+                background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+            }
+            &-3
+            {
+                background-image: linear-gradient(to right,$color-red-light,$color-text);
+            }
+        }
+       
+    }
+    &__picture
+    {
+        background-size: cover;
+        background-blend-mode: screen;
+        height: 23rem;
+        clip-path: ellipse(80% 70% at 50% 30%);
+        &--1
+        {
+            background-image: linear-gradient(to right,$color-blue-mint,$color-blue-dark),
+            url('/img/box1.jpg');
+        }
+        &--2
+        {
+            background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark),
+            url('/img/box2.jpg');
+        }
+        &--3
+        {
+            background-image: linear-gradient(to right,$color-red-light,$color-text),
+            url('/img/box3.jpg');
+        }
+    }
+    &__heading
+    {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+    &__heading-span
+    {
+        border-radius: 5rem;
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break:clone;
+        &--1
+        {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-blue-mint,.85),
+            rgba($color-blue-dark,.85))
+
+        }
+        &--2
+        {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light,.85),
+            rgba($color-primary-dark,.85))
+        }
+        &--3
+        {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-red-light,.85),
+            rgba($color-text,.85))
+        }
+    }
+    &__details
+    {
+        padding: 3rem;
+        color: $color-text;
+        ul
+        {
+            list-style: none;
+            width: 75%;
+            margin: 0 auto;
+
+            li 
+            {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child)
+                {
+                    border-bottom: 1px solid rgb(219, 219, 219);
+                }
+            }
+        }
+    }
+    &__cta
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 90%;
+    }
+    &__price-box
+    {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &__price-only
+    {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value
+    {
+        font-size: 6rem;
+        font-weight: 100;
+        margin-bottom: 5rem;
+    }
+    &:hover 
+    &__side--front
+    {
+        transform: rotateY(-180deg);
+    }
+    &:hover 
+    &__side--back
+    {
+        transform: rotateY(0);
+    }
+}

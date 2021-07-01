@@ -54,6 +54,15 @@
         animation: moveInBottom 0.5s ease-out 0.75;
         animation-fill-mode: backwards;
     }
+    &--blue
+    {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        &::after
+        {
+            background-color: $color-primary-dark;
+        }
+    }
 }
 .button-text
 {
