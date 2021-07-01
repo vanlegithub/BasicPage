@@ -1,0 +1,26 @@
+@import './Abstracts/variables';
+@import './Base/animation';
+@import './Base/base';
+@import './Base/typography';
+@import './Components/button';
+@import './Layout/header';
+@import './Base/animation';
+@import './Layout/grid';
+@import './Pages/home';
+@import './Base/utilities';
+@import './Components/composition';
+@import './Components/skill-box';
+
+
+//Base: setting...
+//Components reusable
+//Layout footer, navbar
+//Pages name page home login
+//Abstracts animation fuction mixin
+//Themes form
+//Vendors css external
+
+// BEM block element modifier
+
+// px = rem * font size
+// 16px*62,5% =10px

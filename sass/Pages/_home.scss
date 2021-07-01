@@ -1,0 +1,16 @@
+.about-section
+{
+    background-color: $color-gray-light;
+    padding: 25rem 0;
+    margin-top: -25rem;
+}
+.section-skills
+{
+    background-image: linear-gradient(to left top,rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8)),
+    url("../img/background2.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 20rem 0;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+    margin-top: -20rem;
+}
