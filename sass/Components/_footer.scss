@@ -1,0 +1,64 @@
+.footer
+{
+    background-color: $color-primary-dark;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    color: $color-primary-light;
+    &__logo-box
+    {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+    &__logo
+    {
+        width: 10rem;
+        height: auto;
+    }
+    &__copyright
+    {
+        border-top: 1px solid $color-primary-light;
+        padding-top: 2rem;
+        width: 70%;
+        float: right;
+    }
+    &__navigation
+    {
+        border-top: 1px solid $color-primary-light;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+    &__list
+    {
+        list-style: none;
+    }
+    &__item
+    {
+        display: inline-block;
+
+        &:not(:last-child)
+        {   
+            margin-right: 3rem;
+        }
+    }
+    &__link
+    {
+        &:link,
+        &:visited
+        {
+            color: $color-primary-light;
+            background-color: $color-primary-dark;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5rem;
+            transition: all .2s;
+        }
+        &:hover,
+        &:active
+        {
+            color: $color-primary-light;
+            box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .4);
+            transform: rotate(5deg) scale(1.1);
+        }
+    }
+}
