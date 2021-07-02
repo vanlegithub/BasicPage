@@ -14,3 +14,10 @@
     left: 50%;
     transform: translate(-50%,-50%);    
 }
+@mixin absRight
+{
+    position: absolute;
+    top: 47%;
+    left: 60%;
+    transform: translate(80%,-80%);    
+}

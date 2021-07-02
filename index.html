@@ -31,7 +31,7 @@
         </div>
     </header>
     <main>
-        <div class="section-about">
+        <div id="about" class="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     About me
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <section ID="socials" class="section-socials">
+        <section id="socials" class="section-socials">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="skill-box">
@@ -114,7 +114,7 @@
             </div>
         </section>
 
-        <section class="section-skills" id="section-skills">
+        <section class="section-skills" id="skills">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     My Skills
@@ -230,10 +230,10 @@
             </div>
         </section>
 
-        <section class="section-favorite">
+        <section id="favorite" class="section-favorite">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    favorite
+                    My Favorite
                 </h2>
             </div>
             <div class="row">
@@ -282,7 +282,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section id="contact" class="section-contact">
             <div class="row">
                 <div class="contact">
                     <div class="contact__form">
@@ -370,7 +370,7 @@
                 <img src="img/box1.jpg" alt="Tour photo" class="popup__img">
             </div>
             <div class="popup__right">
-                <a href="#section-skills" class="popup__close">&times;</a>
+                <a href="#skills" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Information</h2>
                 <h3 class="heading-summary u-margin-bottom-small">Intruduction</h3>
                 <p class="popup__text">
@@ -382,6 +382,22 @@
                 </p>
                 <a href="#" class="button button--dark">Contact now</a>
             </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about" class="navigation__link">About me</a></li>
+                <li class="navigation__item"><a href="#socials" class="navigation__link">My Socials</a></li>
+                <li class="navigation__item"><a href="#skills" class="navigation__link">My Skills</a></li>
+                <li class="navigation__item"><a href="#favorite" class="navigation__link">My Favorite</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact me</a></li>
+            </ul>
         </div>
     </div>
 </body>
