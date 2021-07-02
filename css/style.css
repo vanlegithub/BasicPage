@@ -260,13 +260,13 @@ body {
     outline-offset: 1rem;
     transition: all .2s; }
     .composition__photo--p1 {
-      left: 4rem;
+      left: 0;
       top: -2rem; }
     .composition__photo--p2 {
-      left: 30rem;
-      right: 2rem; }
+      right: 2rem;
+      top: 2rem; }
     .composition__photo--p3 {
-      left: 30%;
+      left: 10%;
       top: 10rem; }
     .composition__photo:hover .composition__photo__photo:not(:hover) {
       transform: scale(0.9); }
@@ -530,7 +530,8 @@ body {
   background-color: #5d5c61;
   padding: 10rem 0;
   font-size: 1.4rem;
-  color: #d8c3a5; }
+  color: #d8c3a5;
+  height: 50vh; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }

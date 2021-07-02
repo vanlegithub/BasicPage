@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <header class="header">
+    
+    <header id="home" class="header">
         <div class="header__logo-box">
             <img class="header__logo" src="/img/logo.png" alt="logo">
         </div>
@@ -30,6 +31,7 @@
                 class="button button--white button--animated">More information</a>
         </div>
     </header>
+
     <main>
         <div id="about" class="section-about">
             <div class="u-center-text u-margin-bottom-big">
@@ -57,7 +59,7 @@
                         Sherlock Holmes, BIGBANG, Lionel Messi, IU
                         <br>League of Legends, PES, travel, G-Dragon
                     </p>
-                    <a href="#socials" class="button-text">More information &rarr;</a>
+                    <a href="#popup" class="button-text">More information &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
@@ -73,7 +75,9 @@
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="skill-box">
-                        <i class=" skill-box__icon fab fa-facebook-square"></i>
+                        <a href="https://www.facebook.com/vanleprofile/" target="_blank">
+                            <i class=" skill-box__icon fab fa-facebook-square"></i>
+                        </a>
                         <h3 class="heading-summary u-margin-bottom-small">My Facebook</h3>
                         <div class="skill-box__text">
                             Facebook, Inc. là một công ty truyền thông xã hội và công nghệ Mỹ có trụ sở tại Menlo Park,
@@ -83,7 +87,9 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="skill-box">
-                        <i class=" skill-box__icon fab fa-instagram-square"></i>
+                        <a href="https://www.instagram.com/__van.le__/" target="_blank">
+                            <i class=" skill-box__icon fab fa-instagram-square"></i>
+                        </a>
                         <h3 class="heading-summary u-margin-bottom-small">My Instagram</h3>
                         <div class="skill-box__text">
                             Instagram là một dịch vụ mạng xã hội chia sẻ hình ảnh và video của Mỹ được tạo ra bởi Kevin
@@ -93,7 +99,9 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="skill-box">
-                        <i class=" skill-box__icon fab fa-github-square"></i>
+                        <a href="https://github.com/vanlegithub/" target="_blank">
+                            <i class=" skill-box__icon fab fa-github-square"></i>
+                        </a>
                         <h3 class="heading-summary u-margin-bottom-small">My Github</h3>
                         <div class="skill-box__text">
                             GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát
@@ -103,7 +111,9 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="skill-box">
-                        <i class=" skill-box__icon fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
+                            <i class=" skill-box__icon fab fa-linkedin"></i>
+                        </a>
                         <h3 class="heading-summary u-margin-bottom-small">My Linkedin</h3>
                         <div class="skill-box__text">
                             LinkedIn là một trang mạng định hướng kinh doanh, có trụ sở tại Mountain View, bang
@@ -181,7 +191,7 @@
                                         Six
                                     </p>
                                     <p class="card__price-value">
-                                        months
+                                        Months
                                     </p>
                                     <a href="#popup" class="button button--white">More</a>
                                 </div>
@@ -226,7 +236,7 @@
                 </div>
             </div>
             <div class="u-center-text">
-                <a href="#" class="button button--dark">More information</a>
+                <a href="#popup" class="button button--dark">More information</a>
             </div>
         </section>
 
@@ -277,7 +287,7 @@
                 </div>
             </div>
             <div class="u-center-text u-margin-top-big u-margin-bottom-big">
-                <a href="https://en.wikipedia.org/wiki/England" target="_blank" class="button-text">More information
+                <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" class="button-text">More information
                     &rarr;</a>
             </div>
         </section>
@@ -318,7 +328,7 @@
                                 </div>
                             </div>
                             <div class="form__group">
-                                <a href="#" class="button button--dark">
+                                <a href="#home" class="button button--dark">
                                     Send &rarr;
                                 </a>
                             </div>
@@ -328,6 +338,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer__logo-box">
             <picture>
@@ -343,34 +354,35 @@
                 <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Address</a>
+                            <a href="#home" class="footer__link">Address</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Phone</a>
+                            <a href="#home" class="footer__link">Phone</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Street</a>
+                            <a href="#home" class="footer__link">Street</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Company</a>
+                            <a href="#home" class="footer__link">Company</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    Copyright &copy; by VanLe. HCMUS 01-07-2021 Ho Chi Minh City
+                    Copyright &copy; by VanLe. FIT-HCMUS Ho Chi Minh City 01-07-2021
                 </p>
             </div>
         </div>
     </footer>
+
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/box1.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/box1.jpg" alt="box1popup" class="popup__img">
             </div>
             <div class="popup__right">
-                <a href="#skills" class="popup__close">&times;</a>
+                <a href="#home" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Information</h2>
                 <h3 class="heading-summary u-margin-bottom-small">Intruduction</h3>
                 <p class="popup__text">
@@ -380,7 +392,7 @@
                     sed fugiat quas. At vel dolorem, officia, rerum tenetur aspernatur, itaque maiores laudantium
                     voluptas
                 </p>
-                <a href="#" class="button button--dark">Contact now</a>
+                <a href="#home" class="button button--dark">Contact now</a>
             </div>
         </div>
     </div>
@@ -400,6 +412,7 @@
             </ul>
         </div>
     </div>
+
 </body>
 
 </html>
