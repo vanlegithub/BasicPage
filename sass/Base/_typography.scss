@@ -1,34 +1,34 @@
 body
 {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    color: $color-text;
+    font-weight: 500;
     font-size: 1.6rem;
-    line-height: 1.7;
-    color: rgb(119, 119, 119);
-    padding: 20px;
+    line-height: 1.5;
+    padding: 2rem;
 }
 .heading-primary
 {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
-    animation: animationtest;
+    animation-name: animationTopDown;
     animation-duration: 2s;
-    animation-iteration-count: 2;
-    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
     &--main
     {
         display: block;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 400;
-        letter-spacing: 10px;
+        letter-spacing: 0.5rem;
     }
     &--sub
     {
         display: block;
         font-size: 1.5rem;
         font-weight: 700;
-        letter-spacing: 5px;
+        letter-spacing: 0.2rem;
     }
 }
 .heading-secondary
@@ -37,7 +37,7 @@ body
     text-transform: uppercase;
     font-weight: 900;
     display: inline-block;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     cursor: pointer;
 
     background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
@@ -47,22 +47,24 @@ body
     transition: all 0.2s;
     &:hover
     {
-        transform: skewY(5deg) scale(1.1);
+        transform: skewY(5deg) scale(1.3);
         text-shadow: 0.5rem 1rem 2rem rgba($color-black,0.2);
     }
 }
-
 .heading-summary
 {
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-left: 1.5rem;
 }
 .paragraph
 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    text-align: left;
     &:not(:last-child)
     {
         margin-bottom: 3rem;
     }
+    margin-left: 1.5rem;
 }

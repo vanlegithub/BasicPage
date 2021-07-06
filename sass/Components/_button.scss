@@ -5,7 +5,7 @@
     {
         text-decoration: none;
         text-transform: uppercase;
-        padding: 15px 40px;
+        padding: 1rem 2rem;
         display: inline-block;
         border-radius: 100px;
         font-size: 1.6rem;
@@ -13,28 +13,19 @@
     }
     &--white
     {
-        color: rgb(119, 119, 119);
-        background-color: rgb(255, 255, 255);
-        &::after
-        {
-            background-color: rgb(255, 255, 255);
-        }
+        color: $color-text;
+        background-color: $color-white;
     }
     &:hover
     {
         transform: translateY(-3px);
-        box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
-        &::after
-        {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
+        box-shadow: 0 5px 20px rgba($color-black, 0.2);
     }
     &:active
     {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 5px 10px rgba($color-black, 0.2);
     }
     &::after
     {
@@ -51,17 +42,16 @@
     }
     &--animated
     {
-        animation: moveInBottom 0.5s ease-out 0.75;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 1.5s;
         animation-fill-mode: backwards;
     }
     &--dark
     {
-        background-color: $color-primary-dark;
+        background-color: $color-gray-mint;
         color: $color-white;
-        &::after
-        {
-            background-color: $color-primary-dark;
-        }
     }
 }
 .button-text
@@ -81,12 +71,12 @@
         background-color: $color-primary-dark;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        transform: translate(-0.2rem);
+        transform: translate(-0.5rem);
     }
     &:active 
     {
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
-        transform: translateY(0);
+        transform: translateY(0.5rem);
     }
     transition: all .2s;
 }

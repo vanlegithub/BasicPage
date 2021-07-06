@@ -1,25 +1,26 @@
 .favorite
 {
     width: 80%;
-    padding: 6rem;
+    padding: 4rem;
+    padding-left: 9rem;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+    margin-top: -5rem;
     box-shadow: 0 3rem 6rem rgba($color-black, .15);
     font-size: $default-font-size;
     border-radius: 100rem;
     background-color: rgba($color-white, .1);
-    padding-left: 9rem;
     color: $color-black;
+
     &__shape
     {
-        width: 15rem;
-        height: 15rem;
-        background-color: orangered;
+        width: 12rem;
+        height: 12rem;
+        margin-top: -1rem;
         float: left;
         position: relative;
         clip-path: circle(50% at 50%);
         transform: translateX(-3rem);
-        margin-top: -1rem;
         shape-outside: circle(50% at 50% 50%);
     }
     &__img

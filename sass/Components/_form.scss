@@ -16,8 +16,8 @@
         border-radius: 1rem;
         border-bottom: 3px solid transparent;
         display: block;
-        background-color: rgba($color-white,.5);
-        width: 80%;
+        background-color: rgba($color-white,.7);
+        width: 55%;
         &:focus
         {
             outline: none;
@@ -42,7 +42,7 @@
     }
     &__label
     {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         margin-left: 2rem;
         margin-top: .7rem;
@@ -69,7 +69,7 @@
         border-radius: 10rem;
         display: inline-block;
         position: absolute;
-        left: -2rem;
+        left: -1rem;
         top: -.5rem;
     }
     &__radio-button::after
