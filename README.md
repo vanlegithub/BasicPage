@@ -9,7 +9,7 @@
 ## Features
 - Navigation bar: circle button, scroll smooth section, motion effect.
 - Responsive: Laptop L 1440px, 4K 2560px, Laptop 1024px, Tablet 768px, Mobile L 425px
-- Pseudo-classes, Animation, Transition effect, Grid.
+- Pseudo-classes, Animation, Transition effect, Grid, Popup content.
 ## Codes
 - Class name BEM, SASS components
 - Reusable function
