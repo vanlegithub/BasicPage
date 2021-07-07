@@ -1,6 +1,6 @@
 .contact
 {
-    background-image: radial-gradient(110% 290% ellipse at -15%,
+    background-image: radial-gradient(110% 290% ellipse at 0%,
     rgba($color-gray-light,0.4) 50%, transparent 10%),
     url("/img/background5.jpg");
     background-size: cover;
@@ -13,4 +13,8 @@
         padding: 3rem;
     }
     width: 85%;
+    @include respond (phone)
+    {
+        margin: 0 auto;
+    }    
 }

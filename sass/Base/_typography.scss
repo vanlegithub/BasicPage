@@ -22,13 +22,29 @@ body
         font-size: 4rem;
         font-weight: 400;
         letter-spacing: 0.5rem;
+        @include respond (big-desktop)
+        {
+            font-size: 4.7rem;
+        }
+        @include respond (phone)
+        {
+            font-size: 2.5rem;
+        }      
     }
     &--sub
     {
         display: block;
         font-size: 1.5rem;
         font-weight: 700;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.2rem;  
+        @include respond (big-desktop)
+        {
+            font-size: 2rem;
+        }  
+        @include respond (phone)
+        {
+            font-size: 1rem;
+        }   
     }
 }
 .heading-secondary
@@ -39,7 +55,14 @@ body
     display: inline-block;
     letter-spacing: 0.5rem;
     cursor: pointer;
-
+    @include respond (big-desktop)
+    {
+        font-size: 3rem;
+    }   
+    @include respond (phone)
+    {
+        font-size: 1.5rem;
+    }  
     background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
     color: transparent;
     -webkit-background-clip: text;
@@ -57,6 +80,14 @@ body
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 1.5rem;
+    @include respond (big-desktop)
+    {
+        font-size: 2.3rem;
+    }
+    @include respond (phone)
+    {
+        font-size: 1rem;
+    }     
 }
 .paragraph
 {
@@ -67,4 +98,12 @@ body
         margin-bottom: 3rem;
     }
     margin-left: 1.5rem;
+    @include respond (big-desktop)
+    {
+        font-size: 2.3rem;
+    }   
+    @include respond (phone)
+    {
+        font-size: 1rem;
+    }  
 }

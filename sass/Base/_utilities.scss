@@ -10,6 +10,10 @@
 .u-margin-bottom-small
 {
     margin-bottom: 1.5rem !important;
+    @include respond (phone)
+    {
+        margin: 0 auto;
+    } 
 }
 .button-favorite
 {

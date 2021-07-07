@@ -18,6 +18,10 @@
         display: block;
         background-color: rgba($color-white,.7);
         width: 55%;
+        @include respond (phone)
+        {
+            width: 70%;
+        }    
         &:focus
         {
             outline: none;

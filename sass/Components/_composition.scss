@@ -9,6 +9,14 @@
         z-index: 10;
         outline-offset: 0.5rem;
         transition: all .2s;
+        @include respond (big-desktop)
+        {
+            width: 70%;
+        }
+        @include respond (phone)
+        {
+           width: 60%;
+        }  
         &--p1
         {
             left: 0%;
@@ -18,11 +26,30 @@
         {
             right: 5rem;
             top: 2rem;
+            @include respond (big-desktop)
+            {
+              top: 4rem;
+              right: -10rem;
+            }
+            @include respond (phone)
+            {
+                top: 4rem;
+                right: 1rem;
+            }  
         }
         &--p3
         {
             left: 15%;
             top: 12rem;
+            @include respond (big-desktop)
+            {
+                top: 20rem;
+            }
+            @include respond (phone)
+            {
+                top:8rem;
+                right: -2rem;
+            }  
         }
         &:hover
         {

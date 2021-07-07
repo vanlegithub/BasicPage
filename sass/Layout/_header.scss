@@ -17,10 +17,30 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+        @include respond (big-desktop)
+        {
+        }
+        @include respond (phone)
+        {
+        }
+        @include respond (tab-land)
+        {
+        }
+        @include respond (tab-port)
+        {
+        }
     } 
     &__logo
     {
         height: 7rem;
+        @include respond (big-desktop)
+        {
+            height: 10rem;
+        }
+        @include respond (phone)
+        {
+            height: 5rem;
+        }  
     }   
     &__logo-box
     {
