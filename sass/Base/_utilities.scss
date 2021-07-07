@@ -13,6 +13,12 @@
     @include respond (phone)
     {
         margin: 0 auto;
+        margin-bottom: 0.5rem !important;
+    } 
+    @include respond (miniphone)
+    {
+        margin: 0 auto;
+        margin-bottom: 0.5rem !important;
     } 
 }
 .button-favorite

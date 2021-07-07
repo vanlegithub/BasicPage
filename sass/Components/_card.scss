@@ -16,7 +16,11 @@
         width: 105%;
         margin-left: -2.5rem;
         margin-bottom: -11rem;
-    }       
+    }
+    @include respond (miniphone)
+    { 
+        margin-bottom: -16rem;
+    }          
     
     &__side
     {
@@ -39,7 +43,11 @@
         @include respond (phone)
         {
             height: 37rem;
-        }            
+        }  
+        @include respond (miniphone)
+        { 
+            height: 32rem;
+        }             
         &--front
         {
             background-color: $color-white;
@@ -67,6 +75,10 @@
         background-blend-mode: screen;
         height: 23rem;
         clip-path: ellipse(80% 70% at 50% 30%);
+        @include respond (miniphone)
+        { 
+            height: 19rem;
+        }   
         &--1
         {
             background-image: linear-gradient(to right,$color-blue-mint,$color-blue-dark),
@@ -150,7 +162,11 @@
                 @include respond (phone)
                 {
                     font-size: 1.3rem;
-                }                     
+                }        
+                @include respond (miniphone)
+                {
+                    font-size: 1rem;
+                }              
                 &:not(:last-child)
                 {
                     border-bottom: 0.5px solid $color-text;
