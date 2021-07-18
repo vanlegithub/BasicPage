@@ -1,53 +1,24 @@
-.card
+.feature-ctn
 {
-    perspective: 150rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.feature
+{
     position: relative;
+    flex-basis: 30%;
     height: 40rem;
-    width: 90%;
-    margin-bottom: -4.5rem;
-    margin-top: -7rem;
-    @include respond (big-desktop)
-    {
-        width: 105%;
-        margin-bottom: -3rem;
-    } 
-    @include respond (phone)
-    {
-        width: 105%;
-        margin-left: -2.5rem;
-        margin-bottom: -11rem;
-    }
-    @include respond (miniphone)
-    { 
-        margin-bottom: -16rem;
-    }          
-    
     &__side
     {
-        color: $color-white;
-        height: 40rem;
-        transition: all .8s ease;
         position: absolute;
-        top: 3rem;
-        left: 3rem;
-        width: 90%;
-        backface-visibility: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        height: 40rem;
+        width: 100%;
         border-radius: 5rem;
-        overflow: hidden;
-        @include respond (big-desktop)
-        {
-            height: 45rem;
-            left: 0;
-        }
-        @include respond (phone)
-        {
-            height: 37rem;
-        }  
-        @include respond (miniphone)
-        { 
-            height: 32rem;
-        }             
+        transition: all .8s ease;
+        overflow: hidden;  
+        backface-visibility: hidden; 
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        color: $color-white;
         &--front
         {
             background-color: $color-white;
@@ -65,7 +36,7 @@
             }
             &-3
             {
-                background-image: linear-gradient(to right,$color-red-light,$color-text);
+                background-image: linear-gradient(to right,$color-blue-mint,$color-text);
             }
         }
     }
@@ -75,10 +46,6 @@
         background-blend-mode: screen;
         height: 23rem;
         clip-path: ellipse(80% 70% at 50% 30%);
-        @include respond (miniphone)
-        { 
-            height: 19rem;
-        }   
         &--1
         {
             background-image: linear-gradient(to right,$color-blue-mint,$color-blue-dark),
@@ -91,7 +58,7 @@
         }
         &--3
         {
-            background-image: linear-gradient(to right,$color-red-light,$color-text),
+            background-image: linear-gradient(to right,$color-blue-mint,$color-text),
             url('/img/box3.jpg');
         }
     }
@@ -106,14 +73,6 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
-        @include respond (big-desktop)
-        {
-            font-size: 3.5rem;
-        }  
-        @include respond (phone)
-        {
-            font-size: 1.5rem;
-        }    
     }
     &__heading-span
     {
@@ -136,7 +95,7 @@
         &--3
         {
             background-image: linear-gradient(to right bottom,
-            rgba($color-red-light,.85),
+            rgba($color-black,.85),
             rgba($color-text,.85))
         }
     }
@@ -154,19 +113,6 @@
                 text-align: center;
                 font-size: 1.7rem;
                 padding: 1rem;
-                @include respond (big-desktop)
-                {
-                    font-size: 2rem;
-                    margin-top: 1rem;
-                } 
-                @include respond (phone)
-                {
-                    font-size: 1.3rem;
-                }        
-                @include respond (miniphone)
-                {
-                    font-size: 1rem;
-                }              
                 &:not(:last-child)
                 {
                     border-bottom: 0.5px solid $color-text;

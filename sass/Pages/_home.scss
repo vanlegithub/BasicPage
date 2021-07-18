@@ -1,39 +1,28 @@
+.section-home
+{
+}
 .section-about
 {
-    background-color: $color-gray-light;
-    padding: 20rem 0;
-    margin-top: -25rem;
+    padding-bottom: 12rem;
 }
-.section-socials
+.section-social
 {
-    background-image: linear-gradient(to left top,rgba($color-primary-light,0.2),rgba($color-primary-dark,0.8)),
-    url("/img/background2.jpg");
+    background-image: url("/img/background3.jpg");
     background-size: cover;
-    position: relative;
-    padding: 15rem 0;
-    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-    margin-top: -20rem;
+    padding: 4rem 0rem 20rem 0rem;
 }
-.section-skills
+.section-feature
+{
+    padding: 4rem 0rem 15rem 0rem;
+}
+.section-layout 
 {
     background-color: $color-gray-light;
-    padding: 5rem 0;
+    padding: 7rem 2rem;
 }
-.section-favorite
+.section-chart
 {
-    background-image: linear-gradient(to left top,rgba($color-white,0.5),rgba($color-blue-mint,0.3)),
-    url("/img/background4.jpg");
-    background-size: cover;
-    position: relative;
-    padding: 5rem 0;
-    height: 70rem;
-    @include respond (big-desktop)
-    {
-        height: 80rem;
-    }
 }
-.section-contact
+.section-end
 {
-    padding: 10rem 0;
-    background-image: linear-gradient(to left top, $color-blue-mint,$color-gray-mint);
 }

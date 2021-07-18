@@ -4,26 +4,11 @@
 }
 .u-margin-bottom-big
 {
-    margin-bottom: 8rem !important;
-    margin-top: 3rem;
+    margin: 8rem !important;
 }
 .u-margin-bottom-small
 {
     margin-bottom: 1.5rem !important;
-    @include respond (phone)
-    {
-        margin: 0 auto;
-        margin-bottom: 0.5rem !important;
-    } 
-    @include respond (miniphone)
-    {
-        margin: 0 auto;
-        margin-bottom: 0.5rem !important;
-    } 
-}
-.button-favorite
-{
-    margin-top: -12rem !important;
 }
 .button-about
 {

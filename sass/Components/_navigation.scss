@@ -1,148 +1,60 @@
-.navigation
+.nav 
 {
-    @include respond (phone)
-    {
-        visibility: hidden;
-    } 
-    &__checkbox
-    {
-        display: none;
-    }
-    &__button
-    {
-        background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
-        border-radius: 50%;
-        z-index: 2000;
-        cursor: pointer;
-        text-align: center;
-        box-shadow: 0 1rem 3rem rgba($color-black, .15);
-    }
-    &__background
-    {
-        background-image: linear-gradient(to right bottom, 
-        rgba(93, 92, 97,0.5), rgba(216, 195, 165,0.8)), 
-        url("/img/background1.jpg");
-        height: 6rem;
-        width: 6rem;
-        position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        border-radius: 50%;
-        z-index: 1000;
-        transition: transform .5s;
-    }
-    &__checkbox:checked~&__background
-    {
-        transform: scale(13);
-    }
-    &__checkbox:checked~&__nav
-    {
-        opacity: 1;
-        visibility:visible;
-    }
-    &__nav
-    {
-        width: 40rem;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1500;
-        transition: all .2s;
-        opacity: 0;
-        visibility: hidden;
-    }
-    &__list
-    {
-        @include absRight;
-        list-style: none;
-        text-align: center;
-    }
-    &__item
-    {
-        margin: 1rem;
-    }
-    &__link
-    {
-        &:link,
-        &:visited
-        {
-            display: inline-block;
-            font-size: 3rem;
-            font-weight: 300;
-            padding: 1rem 2rem;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: radial-gradient(150% 200% ellipse at 115%,
-            $color-white 0%,
-            $color-white 50%,
-            transparent 50%);
-            background-size: 252%;
-            transition: all .2s;
-        }
-        &:hover,
-        &:active
-        {
-            background-position: 100%;
-            color: $color-primary-dark;
-            transform: translateX(1rem);
-        }
-    }
-    &__icon
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 42px;
+    width: 100%;
+    z-index: 900;
+    justify-content: space-between;
+    background-color: $color-black;
+    &-list li 
     {
         position: relative;
-        margin-top: 3.2rem;
-        &,
-        &::before,
-        &::after
-        {
-            width: 3.5rem;
-            height: .3rem;
-            background-color: $color-primary-dark;
-            display: inline-block;
-        }
-        &::before,
-        &::after
-        {
-            content: "";
-            position: absolute;
-            left: 0;
-            transition: all .2s;
-        }
-        &::before
-        {
-            top: -.8rem;
-        }
-        &::after
-        {
-            top: .8rem;
-        } 
     }
-    &__button:hover &__icon::before
+    &-list > li 
     {
-        top: -1rem;
-    } 
-    &__button:hover &__icon::after
-    {
-        top: 1rem;
+        display: inline-block;
     }
-    &__checkbox:checked+&__button &__icon
+    &-list > li > a
     {
-        background-color: transparent;
+        color: $color-gray-light;
     }
-    &__checkbox:checked+&__button &__icon::before
+    &-list li a
     {
-        top: 0;
-        transform: rotate(135deg);
+        color: $color-white;
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 24px;
+        display: block;
     }
-    &__checkbox:checked+&__button &__icon::after
+    &-list li:hover a 
     {
-        top: 0;
-        transform: rotate(-135deg);
+        color: $color-black;
+        background-color: $color-white;
     }
+    &-list .subnav 
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $color-white;
+        list-style: none;
+        box-shadow: 0 0 10px rgba($color-black, 0.3);
+        display: none;
+    }
+    &-list li:hover .subnav
+    {
+        display: block;
+    }
+    &-list > li:hover >a,
+    &-list .subnav li:hover a 
+    {
+        color: $color-black;
+        background-color: $color-gray-light;
+    }
+  
 }
+
+ 

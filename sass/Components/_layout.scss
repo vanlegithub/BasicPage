@@ -1,0 +1,21 @@
+.layout-ctn
+{
+    display: flex;
+}
+.column-item 
+{
+    padding: 0 16px;
+    text-align: justify;
+}
+.sidebar-one 
+{
+    flex: 1;
+}
+.sidebar-two 
+{
+    flex: 1;
+}
+.main-column 
+{
+    flex: 3;
+}

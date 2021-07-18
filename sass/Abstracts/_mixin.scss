@@ -14,12 +14,6 @@
     left: 50%;
     transform: translate(-50%,-50%);    
 }
-@mixin absRight
-{
-    position: absolute;
-    top: 1rem;
-    right: 12rem;  
-}
 @mixin respond ($breakpoint)
 {
     @if $breakpoint == miniphone

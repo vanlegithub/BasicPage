@@ -2,16 +2,12 @@
 @import './Abstracts/variables';
 // define function clearfix, abs center right
 @import './Abstracts/mixin';
-// define animation topdown, moveinbottom
-@import './Base/animation';
 // default body, html
 @import './Base/base';
 // set up style text
 @import './Base/typography';
 // edit header main home
 @import './Layout/header';
-// define grid 1 2 3 4 column
-@import './Layout/grid';
 // set up align default
 @import './Base/utilities';
 // define footer
@@ -21,12 +17,12 @@
 
 // Define function components
 @import './Components/button';
-@import './Components/composition';
-@import './Components/skill-box';
-@import './Components/card';
-@import './Components/favorite';
-@import './Components/contact';
-@import './Components/form';
+@import './Components/about';
+@import './Components/social';
+@import './Components/feature';
 @import './Components/navigation';
 @import './Components/popup';
-
+@import './Components/layout';
+@import './Components/chart';
+@import './Base/animation';
+@import './Components/end';

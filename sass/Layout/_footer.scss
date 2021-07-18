@@ -1,52 +1,30 @@
 .footer
 {
-    background-color: $color-primary-dark;
-    padding: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
     font-size: 1.4rem;
-    color: $color-primary-light;
-    height: 25rem;
     overflow: hidden;
+    padding: 0 5rem;
+    color: $color-primary-light;
+    background-color: $color-black;
     &__logo-box
     {
-        text-align: center;
-        margin-bottom: 3rem;
-        margin-top: -5rem;
+        flex-basis: 45%;
+        margin: auto;
     }
     &__logo
     {
-        width: 10rem;
-        height: auto;
-        @include respond (phone)
-        {
-            width: 7rem;
-        } 
-    }
-    &__copyright
-    {
-        border-top: 1px solid $color-primary-light;
-        padding-top: 2rem;
-        float: right;
-        margin-right: 8rem;
-        @include respond (miniphone)
-        {
-            text-align: center;
-            margin-right: 5rem;
-        } 
-        @include respond (phone)
-        {
-            width: 135%;
-        } 
+        width: 8rem;
+        height: 8rem;
+      
     }
     &__navigation
     {
-        border-top: 1px solid $color-primary-light;
         padding-top: 2rem;
-        display: inline-block;
-        margin-left: 11rem;
-        @include respond (phone)
-        {
-            visibility: hidden;
-        } 
+        flex-basis: 45%;
+        margin: auto;
+        text-align: right;
     }
     &__list
     {
@@ -60,25 +38,24 @@
             margin-right: 3rem;
         }
     }
+    &__copyright
+    {
+        padding-top: 2rem;
+    }
     &__link
     {
         &:link,
         &:visited
         {
             color: $color-primary-light;
-            background-color: $color-primary-dark;
             text-transform: uppercase;
             text-decoration: none;
             display: inline-block;
-            border-radius: 5rem;
             transition: all .2s;
         }
-        &:hover,
-        &:active
+        &:hover
         {
-            color: $color-primary-light;
-            box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .4);
-            transform: rotate(5deg) scale(1.1);
+            opacity: 0.8;
         }
     }
 }

@@ -5,17 +5,12 @@ body
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.5;
-    padding: 2rem;
 }
 .heading-primary
 {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
-    animation-name: animationTopDown;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-delay: 0s;
     &--main
     {
         display: block;
@@ -55,18 +50,9 @@ body
     display: inline-block;
     letter-spacing: 0.5rem;
     cursor: pointer;
-    @include respond (big-desktop)
-    {
-        font-size: 3rem;
-    }   
-    @include respond (phone)
-    {
-        font-size: 1.5rem;
-    }  
-    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    background-image: linear-gradient(to right,$color-primary-dark, $color-black);
     color: transparent;
     -webkit-background-clip: text;
-    
     transition: all 0.2s;
     &:hover
     {
@@ -91,8 +77,8 @@ body
 }
 .paragraph
 {
-    font-size: 1.7rem;
-    text-align: left;
+    font-size: 1.9rem;
+    text-align:justify;
     &:not(:last-child)
     {
         margin-bottom: 3rem;

@@ -18,39 +18,67 @@
 
 <body>
 
-    <header id="home" class="header">
-        <div class="header__logo-box">
-            <img class="header__logo" src="/img/logo.png" alt="logo">
+    <section id="home" class="section-home">
+        <div class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#social">SOCIAL</a></li>
+                <li>
+                    <a href="#popup">MORE
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#feature">FEATURE</a></li>
+                        <li><a href="#layout">CONTENT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#footer">FOOTER</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="search-fast fas fa-search"></i>
+                    </a>
+                </li>
+                <li><a href="#">SIGN IN</a></li>
+                <li><a href="#">SIGN OUT</a></li>
+            </ul>
         </div>
-        <div class="header__text-box">
-            <h3 class="heading-primary">
-                <span class="heading-primary--main">Landing Page<br>Advanced</span>
-                <span class="heading-primary--sub">Design by VanLe</span>
-            </h3>
-            <a href="https://github.com/vanlegithub/LandingPageAdvanced" target="_blank"
-                class="button button--white button--animated">More information</a>
-        </div>
-    </header>
+        <header class="header">
+            <div class="header__text-box">
+                <h3 class="heading-primary">
+                    <span class="heading-primary--main">Landing Page<br>Advanced</span>
+                    <span class="heading-primary--sub">Design by VanLe</span>
+                </h3>
+                <a href="https://github.com/vanlegithub/LandingPageAdvanced" target="_blank"
+                    class="button button--white">More information
+                </a>
+            </div>
+        </header>
+    </section>
 
     <main>
-        <div id="about" class="section-about">
+
+        <section id="about" class="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     About me
                 </h2>
             </div>
-            <div class="row">
-                <div class="col-1-of-2">
+            <div class="content-ctn">
+                <div class="content-left">
                     <h3 class="heading-summary u-margin-bottom-small">
                         Introduction
                     </h3>
                     <p class="paragraph">
                         Summary: I am a 4th year student at HCMUS-VNU majoring in Computer Networking.
                         I have a passion and interest in Web development front-end.
-                        <br>The goal of creating valuable products.
-                        <br>Career objective: Looking forward to working in a young environment.
+                        The goal of creating valuable products.
+                        Career objective: Looking forward to working in a young environment.
                         Become a Senior front-end developer in the next 2 years.Turn into
-                        <br>a fullstack developer within 5 years later.
+                        a fullstack developer within 5 years later.
                     </p>
                     <h3 class="heading-summary u-margin-bottom-small">
                         My hobbies
@@ -61,317 +89,293 @@
                     </p>
                     <a href="#popup" class="button-text button-about">More information &rarr;</a>
                 </div>
-                <div class="col-1-of-2">
-                    <div class="composition">
-                        <img src="img/minipic1.jpg" alt="photo1" class="composition__photo composition__photo--p1">
-                        <img src="img/minipic2.jpg" alt="photo2" class="composition__photo composition__photo--p2">
-                        <img src="img/minipic3.jpg" alt="photo3" class="composition__photo composition__photo--p3">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="socials" class="section-socials">
-            <div class="row">
-                <div class="col-1-of-4">
-                    <div class="skill-box">
-                        <a href="https://www.facebook.com/vanleprofile/" target="_blank">
-                            <i class=" skill-box__icon fab fa-facebook-square"></i>
-                        </a>
-                        <h3 class="heading-summary u-margin-bottom-small">My Facebook</h3>
-                        <div class="skill-box__text">
-                            Facebook, Inc. là một công ty truyền thông xã hội và công nghệ Mỹ có trụ sở tại Menlo Park,
-                            California
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="skill-box">
-                        <a href="https://www.instagram.com/__van.le__/" target="_blank">
-                            <i class=" skill-box__icon fab fa-instagram-square"></i>
-                        </a>
-                        <h3 class="heading-summary u-margin-bottom-small">My Instagram</h3>
-                        <div class="skill-box__text">
-                            Instagram là một dịch vụ mạng xã hội chia sẻ hình ảnh và video của Mỹ được tạo ra bởi Kevin
-                            Systrom và Mike Krieger.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="skill-box">
-                        <a href="https://github.com/vanlegithub/" target="_blank">
-                            <i class=" skill-box__icon fab fa-github-square"></i>
-                        </a>
-                        <h3 class="heading-summary u-margin-bottom-small">My Github</h3>
-                        <div class="skill-box__text">
-                            GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát
-                            triển phần mềm.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="skill-box">
-                        <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
-                            <i class=" skill-box__icon fab fa-linkedin"></i>
-                        </a>
-                        <h3 class="heading-summary u-margin-bottom-small">My Linkedin</h3>
-                        <div class="skill-box__text">
-                            LinkedIn là một trang mạng định hướng kinh doanh, có trụ sở tại Mountain View, bang
-                            California.
-                        </div>
-                    </div>
+                <div class="content-right">
+                    <img src="img/minipic1.jpg" alt="photo1" class="content-right__photo content-right__photo--p1">
+                    <img src="img/minipic2.jpg" alt="photo2" class="content-right__photo content-right__photo--p2">
+                    <img src="img/minipic3.jpg" alt="photo3" class="content-right__photo content-right__photo--p3">
                 </div>
             </div>
         </section>
 
-        <section class="section-skills" id="skills">
+        <section id="social" class="section-social">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    My Socials
+                </h2>
+            </div>
+            <div class="social-ctn">
+                <div class="social-box">
+                    <a href="https://www.facebook.com/vanleprofile/" target="_blank">
+                        <i class=" social-box__icon fab fa-facebook-square"></i>
+                    </a>
+                    <h3 class="heading-summary u-margin-bottom-small">My Facebook</h3>
+                    <p>
+                        Facebook, Inc. là một công ty truyền thông xã hội và công nghệ Mỹ có trụ sở tại Menlo Park,
+                        California
+                    </p>
+                </div>
+                <div class="social-box">
+                    <a href="https://www.instagram.com/__van.le__/" target="_blank">
+                        <i class=" social-box__icon fab fa-instagram-square"></i>
+                    </a>
+                    <h3 class="heading-summary u-margin-bottom-small">My Instagram</h3>
+                    <p>
+                        Instagram là một dịch vụ mạng xã hội chia sẻ hình ảnh và video của Mỹ được tạo ra bởi Kevin
+                        Systrom và Mike Krieger.
+                    </p>
+                </div>
+                <div class="social-box">
+                    <a href="https://github.com/vanlegithub/" target="_blank">
+                        <i class=" social-box__icon fab fa-github-square"></i>
+                    </a>
+                    <h3 class="heading-summary u-margin-bottom-small">My Github</h3>
+                    <p>
+                        GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát
+                        triển phần mềm.
+                    </p>
+                </div>
+                <div class="social-box">
+                    <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
+                        <i class=" social-box__icon fab fa-linkedin"></i>
+                    </a>
+                    <h3 class="heading-summary u-margin-bottom-small">My Linkedin</h3>
+                    <p>
+                        LinkedIn là một trang mạng định hướng kinh doanh, có trụ sở tại Mountain View, bang
+                        California.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature" class="section-feature">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     My Skills
                 </h2>
             </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">
-                                    Use <br> C++/Python
-                                </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>Basic</li>
-                                    <li>OOP</li>
-                                    <li>Data analysis</li>
-                                </ul>
-                            </div>
+            <div class="feature-ctn">
+                <div class="feature">
+                    <div class="feature__side feature__side--front">
+                        <div class="feature__picture feature__picture--1">
+                            &nbsp;
                         </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">
-                                        Two
-                                    </p>
-                                    <p class="card__price-value">
-                                        Years
-                                    </p>
-                                    <a href="#popup" class="button button--white">More</a>
-                                </div>
+                        <h4 class="feature__heading">
+                            <span class="feature__heading-span feature__heading-span--1">
+                                Use <br> C++/Python
+                            </span>
+                        </h4>
+                        <div class="feature__details">
+                            <ul>
+                                <li>Basic</li>
+                                <li>OOP</li>
+                                <li>Data analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature__side feature__side--back feature__side--back-1">
+                        <div class="feature__cta">
+                            <div class="feature__price-box">
+                                <p class="feature__price-only">
+                                    Two
+                                </p>
+                                <p class="feature__price-value">
+                                    Years
+                                </p>
+                                <a href="#popup" class="button button--white">More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--2">
-                                    make <br> landingpage
-                                </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3 SASS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </div>
+                <div class="feature">
+                    <div class="feature__side feature__side--front">
+                        <div class="feature__picture feature__picture--2">
+                            &nbsp;
                         </div>
-                        <div class="card__side card__side--back card__side--back-2">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">
-                                        Six
-                                    </p>
-                                    <p class="card__price-value">
-                                        Months
-                                    </p>
-                                    <a href="#popup" class="button button--white">More</a>
-                                </div>
+                        <h4 class="feature__heading">
+                            <span class="feature__heading-span feature__heading-span--2">
+                                make <br> landingpage
+                            </span>
+                        </h4>
+                        <div class="feature__details">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3 SASS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature__side feature__side--back feature__side--back-2">
+                        <div class="feature__cta">
+                            <div class="feature__price-box">
+                                <p class="feature__price-only">
+                                    Six
+                                </p>
+                                <p class="feature__price-value">
+                                    Months
+                                </p>
+                                <a href="#popup" class="button button--white">More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">
-                                    create<br> website
-                                </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>SQL</li>
-                                    <li>ReactJS</li>
-                                    <li>NodeJs</li>
-                                </ul>
+                <div class="feature">
+                    <div class="feature__side feature__side--front">
+                        <div class="feature__picture feature__picture--3">
+                            &nbsp;
+                        </div>
+                        <h4 class="feature__heading">
+                            <span class="feature__heading-span feature__heading-span--3">
+                                create<br> website
+                            </span>
+                        </h4>
+                        <div class="feature__details">
+                            <ul>
+                                <li>SQL</li>
+                                <li>ReactJS</li>
+                                <li>NodeJs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature__side feature__side--back feature__side--back-3">
+                        <div class="feature__cta">
+                            <div class="feature__price-box">
+                                <p class="feature__price-only">
+                                    Three
+                                </p>
+                                <p class="feature__price-value">
+                                    Months
+                                </p>
+                                <a href="#popup" class="button button--white">More</a>
                             </div>
                         </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">
-                                        Three
-                                    </p>
-                                    <p class="card__price-value">
-                                        Months
-                                    </p>
-                                    <a href="#popup" class="button button--white">More</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <div class="u-center-text">
-                <a href="#popup" class="button button--dark">More information</a>
             </div>
         </section>
 
-        <section id="favorite" class="section-favorite">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    My Favorite
-                </h2>
+        <section id="layout" class="section-layout">
+            <div class="layout-ctn">
+                <div class="column-item sidebar-one">
+                    <h2>Sidebar one</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.
+                    </p>
+                </div>
+                <div class="column-item main-column">
+                    <h2>Main column</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                        ipsum dolor sit amet.
+                    </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                    cupiditate
+                    eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                    neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                        ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="column-item sidebar-two">
+                    <h2>Sidebar two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.Nobis.Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
             </div>
-            <div class="row">
-                <div class="favorite">
-                    <figure class="favorite__shape">
-                        <img src="/img/england.jpg" class="favorite__img" alt="photo1">
-                        <figcaption class="favorite__caption">
-                            England
-                        </figcaption>
-                    </figure>
-                    <div class="favorite__text">
-                        <h3 class="heading-summary u-margin-bottom-small">
-                            England
-                        </h3>
-                        <p>
-                            Anh là một quốc gia thuộc Vương quốc Liên hiệp Anh và Bắc Ireland.
-                            Quốc gia này có biên giới trên bộ với Scotland về phía bắc và với Wales về phía tây.
-                            Biển Ireland nằm về phía tây bắc và biển Celtic nằm về phía tây nam của Anh
+        </section>
+
+        <section id="chart" class="section-chart">
+            <div class="chart-ctn">
+                <div class="chart-layout">
+                    <div class="chart-layout__item" style="--percent: 10%">10%</div>
+                    <div class="chart-layout__item" style="--percent: 20%">20%</div>
+                    <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                    <div class="chart-layout__item" style="--percent: 90%">90%</div>
+                    <div class="chart-layout__item" style="--percent: 80%">80%</div>
+                    <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="end" class="section-end">
+            <div class="end-ctn">
+                <div class="the-end__first">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet.
+                    </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                    cupiditate
+                    eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                    neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                        cupiditate
+                        eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima soluta
+                        neque est beatae? Nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="the-end__second">
+                    <div class="the-end__second-one">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                            cupiditate
+                            eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima
+                            soluta
+                            neque est beatae? Nobis.Nobis.Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+                    <div class="the-end__second-two">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur architecto sit
+                            cupiditate
+                            eveniet voluptatum sequi ab odit culpa ratione saepe molestiae, maiores blanditiis minima
+                            soluta
+                            neque est beatae? Nobis.
                         </p>
                     </div>
                 </div>
-                <div class="favorite">
-                    <figure class="favorite__shape">
-                        <img src="/img/america.jpg" class="favorite__img" alt="photo2">
-                        <figcaption class="favorite__caption">
-                            America
-                        </figcaption>
-                    </figure>
-                    <div class="favorite__text">
-                        <h3 class="heading-summary u-margin-bottom-small">
-                            America
-                        </h3>
-                        <p>
-                            Hoa Kỳ hay Mỹ, tên đầy đủ là Hợp chúng quốc Hoa Kỳ, là một quốc gia cộng hòa lập hiến liên
-                            bang
-                            thuộc châu Mỹ.
-                            Quốc gia này nằm tại Tây Bán cầu, lãnh thổ bao gồm 50 tiểu bang và 1 đặc khu liên bang,
-                            thủ đô là Washington, D.C., thành phố lớn nhất là New York.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="u-center-text button-favorite">
-                <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" class="button-text">More information
-                    &rarr;</a>
             </div>
         </section>
 
-        <section id="contact" class="section-contact">
-            <div class="row">
-                <div class="contact">
-                    <div class="contact__form">
-                        <form class="form">
-                            <div>
-                                <h2 class="heading-secondary">
-                                    contact now
-                                </h2>
-                            </div>
-                            <div class="form__group">
-                                <input id="name" type="text" class="form__input" placeholder="Enter your name" required>
-                                <label for="name" class="form__label">Name</label>
-                            </div>
-                            <div class="form__group">
-                                <input id="email" type="email" class="form__input" placeholder="Enter your email"
-                                    required>
-                                <label for="email" class="form__label">Email</label>
-                            </div>
-                            <div class="form__group">
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="male" name="gender">
-                                    <label for="male" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Male
-                                    </label>
-                                </div>
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="female" name="gender">
-                                    <label for="female" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Female
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form__group">
-                                <a href="#home" class="button button--dark">
-                                    Send &rarr;
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer__logo-box">
             <picture>
-                <img srcset="/img/logo.png 1x" class="footer__logo">
+                <img src="/img/logo.png" class="footer__logo">
             </picture>
-            <h3 class="heading-secondary footer__title">
+            <h3 class="heading-secondary">
                 Van Le
             </h3>
         </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#home" class="footer__link">Address</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#home" class="footer__link">Phone</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#home" class="footer__link">Street</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#home" class="footer__link">Company</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    Copyright &copy; by VanLe. FIT-HCMUS Ho Chi Minh City
-                </p>
-            </div>
+        <div class="footer__navigation">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Address</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Phone</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Email</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Company</a>
+                </li>
+            </ul>
+            <p class="footer__copyright">
+                Copyright &copy; by VanLe
+            </p>
         </div>
     </footer>
 
@@ -395,23 +399,11 @@
             </div>
         </div>
     </div>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <div class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#about" class="navigation__link">About me</a></li>
-                <li class="navigation__item"><a href="#socials" class="navigation__link">My Socials</a></li>
-                <li class="navigation__item"><a href="#skills" class="navigation__link">My Skills</a></li>
-                <li class="navigation__item"><a href="#favorite" class="navigation__link">My Favorite</a></li>
-                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact me</a></li>
-            </ul>
-        </div>
-    </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>

@@ -10,53 +10,33 @@
         border-radius: 100px;
         font-size: 1.6rem;
         position: relative;
-        @include respond (phone)
-        {
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-        } 
+        transition: all .2s;
     }
     &--white
     {
         color: $color-text;
         background-color: $color-white;
-        @include respond (phone)
-        {
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-        } 
     }
     &:hover
     {
-        transform: translateY(-3px);
+        opacity: 0.8;
         box-shadow: 0 5px 20px rgba($color-black, 0.2);
     }
     &:active
     {
-        outline: none;
-        transform: translateY(-1px);
+        transform: translateY(1px);
         box-shadow: 0 5px 10px rgba($color-black, 0.2);
     }
     &::after
     {
-        content: "";
         display: inline-block;
+        position: absolute;
         height: 100%;
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+        content: "";
         border-radius: 100px;
         z-index: -1;
-        transition: all .4s;
-    }
-    &--animated
-    {
-        animation-name: moveInBottom;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-delay: 1.5s;
-        animation-fill-mode: backwards;
+        transition: all .2s;
     }
     &--dark
     {
@@ -86,7 +66,6 @@
         background-color: $color-primary-dark;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        transform: translate(-0.5rem);
     }
     &:active 
     {

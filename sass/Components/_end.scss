@@ -1,0 +1,35 @@
+.end-ctn 
+{
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-blue-mint;
+    border-radius: 70px;
+}
+.the-end__first 
+{
+    padding: 0.4rem 1.6rem;
+    background-color: $color-gray-mint;
+    flex: 1;
+    text-align: justify;
+}
+.the-end__second
+ {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary-light;
+    text-align: justify;
+}
+.the-end__second-one 
+{
+    flex: 1;
+    padding: 4px 16px;
+    background-color: $color-gray-light;
+}
+.the-end__second-two 
+{
+    flex: 1;
+    padding: 4px 16px;
+    background-color: rgb(192, 210, 227);
+}
