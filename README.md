@@ -7,13 +7,17 @@
 - Javascript
 - ...
 ## Features
-- Navigation bar: circle button, scroll smooth section, motion effect.
-- Responsive: Laptop L 1440px, 4K 2560px, Laptop 1024px, Tablet 768px, Mobile L 425px
-- Pseudo-classes, Animation, Transition effect, Grid, Popup content.
+- Navigation bar: scroll smooth section, more option button, always visible when scrolling,...
+- Responsive: Laptop L 1440px, 4K 2560px, Laptop 1024px, Tablet 768px, Mobile L 425px,...
+- Animation, Transition effect, Popup content, Toast message, From validation, Search fast,...
 ## Codes
 - Class name BEM, SASS components
+- Flexbox model
 - Reusable function
 - Convert SCSS to CSS
+- Grid systems
+- Pseudo-classes
+- Minify code css
 - ...
 ## References
 - https://fontawesome.com/
@@ -21,9 +25,12 @@
 - https://bennettfeely.com/
 - https://fonts.google.com/
 - https://code.jquery.com/
+- https://caniuse.com/
 - https://firebase.google.com/
+- https://www.minifier.org/
+- https://developer.mozilla.org/en-US/
 - https://css-tricks.com/snippets/html/glyphs/
 - ...
 ## More
-- Continue to update more for the project in future.
+- Continue to update more for the project in future. Example: Toast message, From validation, Sign in accout,..
 - ...
