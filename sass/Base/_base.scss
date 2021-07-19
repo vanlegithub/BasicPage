@@ -8,13 +8,13 @@ html
 {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    @include respond (miniphone)
-    {
-        font-size: 30%;
-    }
     @include respond (phone)
     {
         font-size: 40%;
+    }
+    @include respond (miniphone)
+    {
+        font-size: 30%;
     }
     @include respond (tab-land)
     {
@@ -26,7 +26,7 @@ html
     }
     @include respond (big-desktop)
     {
-        font-size: 100%;
+        font-size: 80%;
     }
 }
 body

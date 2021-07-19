@@ -81,6 +81,16 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
+        @include respond (phone)
+        {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        @include respond (miniphone)
+        {
+            font-size: 1.4rem;
+            text-align: center;
+        }
     }
     &__heading-span
     {
@@ -124,6 +134,14 @@
                 &:not(:last-child)
                 {
                     border-bottom: 0.5px solid $color-text;
+                }
+                @include respond (phone)
+                {
+                    font-size: 1.5rem;
+                }
+                @include respond (miniphone)
+                {
+                    font-size: 1.5rem;
                 }
             }
         }

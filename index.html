@@ -17,11 +17,12 @@
 </head>
 
 <body>
-    <div id="toast"></div>
+
     <section id="home" class="section-home">
+        <div id="toast"></div>
         <div class="nav">
             <ul class="nav-list">
-                <li><a href="#home">HOME</a></li>
+                <li><a href="https://landingpage-advanced.web.app/" target="_blank">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#social">SOCIAL</a></li>
                 <li>
@@ -45,6 +46,7 @@
                 <li><a onclick="showErrorToast();" href="#">SIGN OUT</a></li>
             </ul>
         </div>
+        <div class="header__logo"><img src="/img/logo.png" alt="VL"></div>
         <header class="header">
             <div class="header__text-box">
                 <h3 class="heading-primary">
@@ -113,7 +115,7 @@
                     <a href="https://www.facebook.com/vanleprofile/" target="_blank">
                         <i class=" social-box__icon fab fa-facebook-square"></i>
                     </a>
-                    <h3 class="heading-summary u-margin-bottom-small">My Facebook</h3>
+                    <h3>My Facebook</h3>
                     <p>
                         Facebook, Inc. là một công ty truyền thông xã hội và công nghệ Mỹ có trụ sở tại Menlo Park,
                         California
@@ -123,7 +125,7 @@
                     <a href="https://www.instagram.com/__van.le__/" target="_blank">
                         <i class=" social-box__icon fab fa-instagram-square"></i>
                     </a>
-                    <h3 class="heading-summary u-margin-bottom-small">My Instagram</h3>
+                    <h3>My Instagram</h3>
                     <p>
                         Instagram là một dịch vụ mạng xã hội chia sẻ hình ảnh và video của Mỹ được tạo ra bởi Kevin
                         Systrom và Mike Krieger.
@@ -133,7 +135,7 @@
                     <a href="https://github.com/vanlegithub/" target="_blank">
                         <i class=" social-box__icon fab fa-github-square"></i>
                     </a>
-                    <h3 class="heading-summary u-margin-bottom-small">My Github</h3>
+                    <h3>My Github</h3>
                     <p>
                         GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát
                         triển phần mềm.
@@ -143,7 +145,7 @@
                     <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
                         <i class=" social-box__icon fab fa-linkedin"></i>
                     </a>
-                    <h3 class="heading-summary u-margin-bottom-small">My Linkedin</h3>
+                    <h3>My Linkedin</h3>
                     <p>
                         LinkedIn là một trang mạng định hướng kinh doanh, có trụ sở tại Mountain View, bang
                         California.
@@ -366,98 +368,90 @@
             </div>
         </section>
 
+        <section id="contact" class="section-form">
+            <div class="form-left">
+                <form action="" method="POST" class="form" id="form-1">
+                    <h3 class="heading">CREATE ACCOUNT</h3>
+                    <div class="spacer"></div>
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Fullname</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="VD: Van Le" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="text" placeholder="VD: email@domain.com"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Enter password"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password_confirmation" class="form-label">Confirm password</label>
+                        <input id="password_confirmation" name="password_confirmation"
+                            placeholder="Enter password again" type="password" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <button onclick="showErrorToast();" class="form-submit">CREATE</button>
+                </form>
+            </div>
+            <div class="form-right">
+                <form action="" method="POST" class="form" id="form-2">
+                    <h3 class="heading">SIGN IN</h3>
+                    <div class="spacer"></div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="enter-email" name="email" type="text" placeholder="VD: email@domain.com"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input id="enter-password" name="password" type="password" placeholder="Enter password"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <button onclick="showErrorToast();" class="form-submit">SIGN IN</button>
+                </form>
+            </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="footer__logo-box">
+                <picture>
+                    <img src="/img/logo.png" class="footer__logo">
+                </picture>
+                <h3 class="heading-secondary">
+                    Van Le
+                </h3>
+            </div>
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Address</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Phone</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Email</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Company</a>
+                    </li>
+                </ul>
+                <p class="footer__copyright">
+                    Copyright &copy; by VanLe
+                </p>
+            </div>
+        </footer>
+
     </main>
-    <section id="contact" class="section-form">
 
-        <div class="form-left">
-            <form action="" method="POST" class="form" id="form-1">
-                <h3 class="heading">CREATE ACCOUNT</h3>
-                <div class="spacer"></div>
-
-                <div class="form-group">
-                    <label for="fullname" class="form-label">Fullname</label>
-                    <input id="fullname" name="fullname" type="text" placeholder="VD: Van Le" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="email" class="form-label">Email</label>
-                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="password" class="form-label">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Enter password"
-                        class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="password_confirmation" class="form-label">Confirm password</label>
-                    <input id="password_confirmation" name="password_confirmation" placeholder="Enter password again"
-                        type="password" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <button onclick="showErrorToast();" class="form-submit">CREATE</button>
-            </form>
-
-        </div>
-        <div class="form-right">
-            <form action="" method="POST" class="form" id="form-2">
-                <h3 class="heading">SIGN IN</h3>
-                <div class="spacer"></div>
-
-                <div class="form-group">
-                    <label for="email" class="form-label">Email</label>
-                    <input id="enter-email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="password" class="form-label">Password</label>
-                    <input id="enter-password" name="password" type="password" placeholder="Enter password"
-                        class="form-control">
-                    <span class="form-message"></span>
-                </div>
-
-                <button onclick="showErrorToast();" class="form-submit">SIGN IN</button>
-            </form>
-        </div>
-
-    </section>
-
-    <footer id="footer" class="footer">
-        <div class="footer__logo-box">
-            <picture>
-                <img src="/img/logo.png" class="footer__logo">
-            </picture>
-            <h3 class="heading-secondary">
-                Van Le
-            </h3>
-        </div>
-        <div class="footer__navigation">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Address</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Phone</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Email</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Company</a>
-                </li>
-            </ul>
-            <p class="footer__copyright">
-                Copyright &copy; by VanLe
-            </p>
-        </div>
-    </footer>
-    
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>

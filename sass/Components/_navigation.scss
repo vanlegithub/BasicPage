@@ -9,6 +9,14 @@
     z-index: 900;
     justify-content: space-between;
     background-color: $color-black;
+    @include respond (phone)
+    {
+        font-size: 10px;
+    }
+    @include respond (miniphone)
+    {
+        font-size: 10px;
+    }
     &-list li 
     {
         position: relative;
@@ -26,15 +34,16 @@
         color: $color-white;
         text-decoration: none;
         line-height: 46px;
-        padding: 0 15px;
+        padding: 0 1.5rem;
         display: block;
         @include respond (phone)
         {
-            padding: 0 5px;
+            padding: 0 0.5rem;
         }
         @include respond (miniphone)
         {
-            padding: 0 5px;
+            padding: 0 0.2rem;
+            margin: 0;
         }
     }
     &-list li:hover a 
@@ -62,7 +71,6 @@
         color: $color-black;
         background-color: $color-gray-light;
     }
-  
 }
 
  

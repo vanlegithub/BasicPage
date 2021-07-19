@@ -1,25 +1,17 @@
-// Toast function
-function toast({ title = "", message = "", type = "info", duration = 1500 })
- {
+function toast({ title = "", message = "", type = "info", duration = 1500 }) {
     const main = document.getElementById("toast");
-    if (main) 
-    {
+    if (main) {
         const toast = document.createElement("div");
-        // Auto remove toast
-        const autoRemoveId = setTimeout(function () 
-        {
+        const autoRemoveId = setTimeout(function () {
             main.removeChild(toast);
         }, duration + 1000);
-        // Remove toast when clicked
-        toast.onclick = function (e) 
-        {
-            if (e.target.closest(".toast__close")) 
-            {
+        toast.onclick = function (e) {
+            if (e.target.closest(".toast__close")) {
                 main.removeChild(toast);
                 clearTimeout(autoRemoveId);
             }
         };
-        const icons = 
+        const icons =
         {
             success: "fas fa-check-circle",
             info: "fas fa-info-circle",
@@ -28,12 +20,10 @@ function toast({ title = "", message = "", type = "info", duration = 1500 })
         };
         const icon = icons[type];
         const delay = (duration / 1000).toFixed(2);
-
         toast.classList.add("toast", `toast--${type}`);
         toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
-
-        toast.innerHTML = 
-        `
+        toast.innerHTML =
+            `
         <div class="toast__icon">
             <i class="${icon}"></i>
         </div>
@@ -48,55 +38,50 @@ function toast({ title = "", message = "", type = "info", duration = 1500 })
         main.appendChild(toast);
     }
 }
-function showThanksToast() 
-{
+function showThanksToast() {
     toast
-    (
-    {
-        title: "Thank you!!!",
-        message: "I appreciate that.",
-        type: "success",
-        duration: 1500
-    }
-    );
+        (
+            {
+                title: "Thank you!!!",
+                message: "I appreciate that.",
+                type: "success",
+                duration: 1500
+            }
+        );
 }
-function showSorryToast()
- {
+function showSorryToast() {
     toast
-    (
-    {
-        title: "Oops!!!",
-        message: "Sorry, i will try more.",
-        type: "error",
-        duration: 1500
-    }
-    );
+        (
+            {
+                title: "Oops!!!",
+                message: "Sorry, i will try more.",
+                type: "error",
+                duration: 1500
+            }
+        );
 }
-function showSuccessToast() 
-{
+function showSuccessToast() {
     toast
-    (
-    {
-        title: "Thank you your click !!!",
-        message: "This function is not available yet.",
-        type: "success",
-        duration: 1500
-    }
-    );
+        (
+            {
+                title: "Thank you your click !!!",
+                message: "This function is not available yet.",
+                type: "success",
+                duration: 1500
+            }
+        );
 }
-function showErrorToast()
- {
+function showErrorToast() {
     toast
-    (
-    {
-        title: "Thank you your click !!!",
-        message: "This function is not available yet.",
-        type: "error",
-        duration: 1500
-    }
-    );
+        (
+            {
+                title: "Thank you your click !!!",
+                message: "This function is not available yet.",
+                type: "error",
+                duration: 1500
+            }
+        );
 }
-// Đối tượng `Validator`
 function Validator(options) {
     function getParent(element, selector) {
         while (element.parentElement) {
@@ -106,33 +91,25 @@ function Validator(options) {
             element = element.parentElement;
         }
     }
-
     var selectorRules = {};
-
-    // Hàm thực hiện validate
     function validate(inputElement, rule) {
         var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
         var errorMessage;
-
-        // Lấy ra các rules của selector
         var rules = selectorRules[rule.selector];
-        
-        // Lặp qua từng rule & kiểm tra
-        // Nếu có lỗi thì dừng việc kiểm
         for (var i = 0; i < rules.length; ++i) {
             switch (inputElement.type) {
                 case 'radio':
                 case 'checkbox':
-                    errorMessage = rules[i](
-                        formElement.querySelector(rule.selector + ':checked')
-                    );
+                    errorMessage = rules[i]
+                        (
+                            formElement.querySelector(rule.selector + ':checked')
+                        );
                     break;
                 default:
                     errorMessage = rules[i](inputElement.value);
             }
             if (errorMessage) break;
         }
-        
         if (errorMessage) {
             errorElement.innerText = errorMessage;
             getParent(inputElement, options.formGroupSelector).classList.add('invalid');
@@ -140,20 +117,13 @@ function Validator(options) {
             errorElement.innerText = '';
             getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
         }
-
         return !errorMessage;
     }
-
-    // Lấy element của form cần validate
     var formElement = document.querySelector(options.form);
     if (formElement) {
-        // Khi submit form
         formElement.onsubmit = function (e) {
             e.preventDefault();
-
             var isFormValid = true;
-
-            // Lặp qua từng rules và validate
             options.rules.forEach(function (rule) {
                 var inputElement = formElement.querySelector(rule.selector);
                 var isValid = validate(inputElement, rule);
@@ -161,14 +131,11 @@ function Validator(options) {
                     isFormValid = false;
                 }
             });
-
             if (isFormValid) {
-                // Trường hợp submit với javascript
                 if (typeof options.onSubmit === 'function') {
                     var enableInputs = formElement.querySelectorAll('[name]');
                     var formValues = Array.from(enableInputs).reduce(function (values, input) {
-                        
-                        switch(input.type) {
+                        switch (input.type) {
                             case 'radio':
                                 values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value;
                                 break;
@@ -188,82 +155,60 @@ function Validator(options) {
                             default:
                                 values[input.name] = input.value;
                         }
-
                         return values;
                     }, {});
                     options.onSubmit(formValues);
                 }
-                // Trường hợp submit với hành vi mặc định
                 else {
                     formElement.submit();
                 }
             }
         }
-
-        // Lặp qua mỗi rule và xử lý (lắng nghe sự kiện blur, input, ...)
         options.rules.forEach(function (rule) {
-
-            // Lưu lại các rules cho mỗi input
             if (Array.isArray(selectorRules[rule.selector])) {
                 selectorRules[rule.selector].push(rule.test);
             } else {
                 selectorRules[rule.selector] = [rule.test];
             }
-
             var inputElements = formElement.querySelectorAll(rule.selector);
-
             Array.from(inputElements).forEach(function (inputElement) {
-               // Xử lý trường hợp blur khỏi input
                 inputElement.onblur = function () {
                     validate(inputElement, rule);
                 }
-
-                // Xử lý mỗi khi người dùng nhập vào input
                 inputElement.oninput = function () {
                     var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
                     errorElement.innerText = '';
                     getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
-                } 
+                }
             });
         });
     }
-
 }
-
-
-
-// Định nghĩa rules
-// Nguyên tắc của các rules:
-// 1. Khi có lỗi => Trả ra message lỗi
-// 2. Khi hợp lệ => Không trả ra cái gì cả (undefined)
 Validator.isRequired = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-            return value ? undefined :  message || 'Please enter this field'
+            return value ? undefined : message || 'Please enter this field'
         }
     };
 }
-
 Validator.isEmail = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(value) ? undefined :  message || 'This field must be email';
+            return regex.test(value) ? undefined : message || 'This field must be email';
         }
     };
 }
-
 Validator.minLength = function (selector, min, message) {
     return {
         selector: selector,
         test: function (value) {
-            return value.length >= min ? undefined :  message || `Please enter at least ${min} characters`;
+            return value.length >= min ? undefined : message || `Please enter at least ${min} characters`;
         }
     };
 }
-
 Validator.isConfirmed = function (selector, getConfirmValue, message) {
     return {
         selector: selector,
@@ -272,40 +217,40 @@ Validator.isConfirmed = function (selector, getConfirmValue, message) {
         }
     }
 }
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Mong muốn của chúng ta
-    Validator({
-      form: '#form-1',
-      formGroupSelector: '.form-group',
-      errorSelector: '.form-message',
-      rules: [
-        Validator.isRequired('#fullname', 'Enter fullname again'),
-        Validator.isEmail('#email'),
-        Validator.minLength('#password', 6),
-        Validator.isRequired('#password_confirmation'),
-        Validator.isConfirmed('#password_confirmation', function () {
-          return document.querySelector('#form-1 #password').value;
-        }, 'Those passwords didn’t match. Try again.')
-      ],
-      onSubmit: function (data) {
-        // Call API
-        console.log(data);
-      }
-    });
-
-
-    Validator({
-      form: '#form-2',
-      formGroupSelector: '.form-group',
-      errorSelector: '.form-message',
-      rules: [
-        Validator.isEmail('#email'),
-        Validator.minLength('#password', 6),
-      ],
-      onSubmit: function (data) {
-        // Call API
-        console.log(data);
-      }
-    });
-  });
+    Validator
+        (
+            {
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules:
+                    [
+                        Validator.isRequired('#fullname', 'Enter fullname again'),
+                        Validator.isEmail('#email'),
+                        Validator.minLength('#password', 6),
+                        Validator.isRequired('#password_confirmation'),
+                        Validator.isConfirmed('#password_confirmation', function () {
+                            return document.querySelector('#form-1 #password').value;
+                        }, 'Those passwords didn’t match. Try again.')
+                    ],
+                onSubmit: function (data) {
+                    console.log(data);
+                }
+            });
+    Validator
+        (
+            {
+                form: '#form-2',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules:
+                    [
+                        Validator.isEmail('#email'),
+                        Validator.minLength('#password', 6),
+                    ],
+                onSubmit: function (data) {
+                    console.log(data);
+                }
+            });
+});

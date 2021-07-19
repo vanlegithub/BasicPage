@@ -29,6 +29,14 @@
     &__list
     {
         list-style: none;
+        @include respond (phone)
+        {
+            display: none;
+        }
+        @include respond (miniphone)
+        {
+            display: none;
+        }
     }
     &__item
     {

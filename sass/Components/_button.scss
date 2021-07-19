@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     color: $color-black;
-    padding: 8px 35px;
+    padding: 0.8rem 3.5rem;
     border-radius: 50px;
     cursor: pointer;
     min-width: 100px;
@@ -16,11 +16,11 @@
     box-shadow: 0 5px 5px rgba($color-black, .3);
     &--size-l
     {
-        padding: 12px 40px;
+        padding: 1.2rem 4.0rem;
     }
     &--size-s
     {
-        padding: 6px 25px;
+        padding: 0.6rem 2.5rem;
     }
     &:hover
     {
@@ -28,7 +28,7 @@
     }
     & +&
     {
-        margin-left: 16px;
+        margin-left: 1.6rem;
     }
     &--success 
     {
@@ -45,6 +45,14 @@
     &--infor
     {
         background-color: $color-white;
+        @include respond (phone)
+        {
+            padding: 0.5rem 2.5rem;
+        }  
+        @include respond (miniphone)
+        {
+            padding: 0.5rem 2.5rem;
+        }
     }
     &--disabled, &[disabled] 
     {
