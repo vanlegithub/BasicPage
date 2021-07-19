@@ -20,3 +20,16 @@
     background-color: $color-gray-light;
     padding: 3rem 2rem;
 }
+.section-form
+{
+    display: flex;
+    justify-content: space-evenly;
+    @include respond (phone)
+    {
+        flex-direction: column;
+    }
+    @include respond (miniphone)
+    {
+        flex-direction: column;
+    }
+}

@@ -1,11 +1,22 @@
 .layout-ctn
 {
     display: flex;
+    @include respond (phone)
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+    @include respond (miniphone)
+    {
+        flex-direction: column;
+        padding: 0;
+    }
 }
 .column-item 
 {
     padding: 0 16px;
     text-align: justify;
+
 }
 .sidebar-one 
 {

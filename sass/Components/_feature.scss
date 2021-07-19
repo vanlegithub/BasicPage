@@ -25,6 +25,14 @@
         }
         &--back
         {
+            @include respond (phone)
+            {
+                display: none;
+            }
+            @include respond (miniphone)
+            {
+                display: none;
+            }
             transform: rotateY(180deg);
             &-1
             {
@@ -151,6 +159,14 @@
     &__side--front
     {
         transform: rotateY(-180deg);
+        @include respond (phone)
+        {
+            transform: none;
+        }
+        @include respond (miniphone)
+        {
+            transform: none;
+        }
     }
     &:hover 
     &__side--back

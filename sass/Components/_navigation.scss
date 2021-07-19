@@ -28,6 +28,14 @@
         line-height: 46px;
         padding: 0 15px;
         display: block;
+        @include respond (phone)
+        {
+            padding: 0 5px;
+        }
+        @include respond (miniphone)
+        {
+            padding: 0 5px;
+        }
     }
     &-list li:hover a 
     {

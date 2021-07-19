@@ -14,6 +14,8 @@
 @import './Layout/footer';
 // define 5 section
 @import './Pages/home';
+// define animation
+@import './Abstracts/animation';
 
 // Define function components
 @import './Components/button';
@@ -24,6 +26,6 @@
 @import './Components/popup';
 @import './Components/layout';
 @import './Components/chart';
-@import './Base/animation';
 @import './Components/end';
 @import './Components/toast';
+@import './Components/form';

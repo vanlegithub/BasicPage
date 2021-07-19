@@ -3,6 +3,16 @@
     display: flex;
     flex-direction: row;
     padding: 0 15rem;
+    @include respond (phone)
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+    @include respond (miniphone)
+    {
+        flex-direction: column;
+        padding: 0;
+    }
 }
 .the-end__first 
 {
