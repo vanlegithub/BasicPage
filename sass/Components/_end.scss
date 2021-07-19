@@ -1,10 +1,8 @@
 .end-ctn 
 {
-    padding: 5rem 10rem;
     display: flex;
     flex-direction: row;
-    background-color: $color-blue-mint;
-    border-radius: 70px;
+    padding: 0 15rem;
 }
 .the-end__first 
 {
@@ -25,7 +23,7 @@
 {
     flex: 1;
     padding: 4px 16px;
-    background-color: $color-gray-light;
+    background-color: $color-white;
 }
 .the-end__second-two 
 {

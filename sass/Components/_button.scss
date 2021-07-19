@@ -1,76 +1,54 @@
-.button
+.btn
 {
-    &:link,
-    &:visited
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $color-black;
+    padding: 8px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 100px;
+    transition: all .2s ease;
+    user-select: none;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba($color-black, .3);
+    &--size-l
     {
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 1rem 2rem;
-        display: inline-block;
-        border-radius: 100px;
-        font-size: 1.6rem;
-        position: relative;
-        transition: all .2s;
+        padding: 12px 40px;
     }
-    &--white
+    &--size-s
     {
-        color: $color-text;
-        background-color: $color-white;
+        padding: 6px 25px;
     }
     &:hover
     {
         opacity: 0.8;
-        box-shadow: 0 5px 20px rgba($color-black, 0.2);
     }
-    &:active
+    & +&
     {
-        transform: translateY(1px);
-        box-shadow: 0 5px 10px rgba($color-black, 0.2);
+        margin-left: 16px;
     }
-    &::after
+    &--success 
     {
-        display: inline-block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        content: "";
-        border-radius: 100px;
-        z-index: -1;
-        transition: all .2s;
+        background-color: $color-blue-dark;
     }
-    &--dark
+    &--warn 
     {
-        background-color: $color-gray-mint;
-        color: $color-white;
-    }
-}
-.button-text
-{
-    &:link,
-    &:visited
+        background-color: rgba(255, 183, 2, 0.9);
+    } 
+    &--deny 
     {
-        color: $color-primary-dark;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary-dark;
-        padding: .3rem;
-        font-size: $default-font-size;
-        @include respond (phone)
-        {
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-        } 
+        background-color: rgba(255, 98, 61, 0.6);
     }
-    &:hover
+    &--infor
     {
-        background-color: $color-primary-dark;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+        background-color: $color-white;
     }
-    &:active 
+    &--disabled, &[disabled] 
     {
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
-        transform: translateY(0.5rem);
+        opacity: 0.5 !important;
+        pointer-events: none;
     }
-    transition: all .2s;
 }
