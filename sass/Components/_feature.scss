@@ -25,11 +25,11 @@
         }
         &--back
         {
-            @include respond (phone)
+            @include respond (mini-mobile)
             {
                 display: none;
             }
-            @include respond (miniphone)
+            @include respond (mobile)
             {
                 display: none;
             }
@@ -81,12 +81,12 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
-        @include respond (phone)
+        @include respond (mobile)
         {
             font-size: 1.4rem;
             text-align: center;
         }
-        @include respond (miniphone)
+        @include respond (mini-mobile)
         {
             font-size: 1.4rem;
             text-align: center;
@@ -135,11 +135,11 @@
                 {
                     border-bottom: 0.5px solid $color-text;
                 }
-                @include respond (phone)
+                @include respond (mobile)
                 {
                     font-size: 1.5rem;
                 }
-                @include respond (miniphone)
+                @include respond (mini-mobile)
                 {
                     font-size: 1.5rem;
                 }
@@ -177,11 +177,11 @@
     &__side--front
     {
         transform: rotateY(-180deg);
-        @include respond (phone)
+        @include respond (mobile)
         {
             transform: none;
         }
-        @include respond (miniphone)
+        @include respond (mini-mobile)
         {
             transform: none;
         }

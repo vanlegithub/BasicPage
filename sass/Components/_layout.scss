@@ -1,12 +1,12 @@
 .layout-ctn
 {
     display: flex;
-    @include respond (phone)
+    @include respond (mobile)
     {
         flex-direction: column;
         padding: 0;
     }
-    @include respond (miniphone)
+    @include respond (mini-mobile)
     {
         flex-direction: column;
         padding: 0;

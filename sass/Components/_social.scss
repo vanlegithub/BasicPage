@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    @include respond (phone)
+    @include respond (mobile)
     {
         flex-direction: column;
     }
-    @include respond (miniphone)
+    @include respond (mini-mobile)
     {
         flex-direction: column;
     }
@@ -17,12 +17,12 @@
     font-size: 1.5rem;
     flex-basis: 22%;
     padding: 2.5rem 2.5rem 4rem 2.5rem;
-    @include respond (phone)
+    @include respond (mobile)
     {
         padding: 1rem 1rem 2rem 1rem;
         margin-top: 1rem;
     }
-    @include respond (miniphone)
+    @include respond (mini-mobile)
     {
         padding: 1rem 1rem 2rem 1rem;
         margin-top: 1rem;

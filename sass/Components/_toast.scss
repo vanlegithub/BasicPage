@@ -9,45 +9,45 @@
 {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: $color-white;
     border-radius: 2px;
     padding: 2rem 0;
     min-width: 200px;
     max-width: 350px;
     border-left: 4px solid;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 8px rgba($color-primary-dark, 0.3);
     transition: all linear 0.3s;
     &--success 
     {
-        border-color: #47d864;
+        border-color: $color-success;
     }
     &--success &__icon
     {
-        color: #47d864;
+        color: $color-success;
     }
     &--info 
     {
-        border-color: #2f86eb;
+        border-color: $color-infor;
     }
     &--info &__icon 
     {
-        color: #2f86eb;
+        color: $color-infor;
     }
     &--warning 
     {
-        border-color: #ffc021;
+        border-color: $color-warn;
     }
     &--warning &__icon 
     {
-        color: #ffc021;
+        color: $color-warn;
     }
     &--error 
     {
-        border-color: #ff623d;
+        border-color: $color-deny;
     }
     &--error &__icon 
     {
-        color: #ff623d;
+        color: $color-deny;
     }
     & + & 
     {
@@ -70,19 +70,20 @@
     {
         font-size: 1.6rem;
         font-weight: 600;
-        color: #333;
+        color: rgb(0, 0, 0);
+        ;
     }
     &__msg 
     {
         font-size: 1.4rem;
-        color: #888;
+        color: $color-text;
         margin-top: 6px;
         line-height: 1.5;
     }
     &__close 
     {
         font-size: 2rem;
-        color: rgba(0, 0, 0, 0.3);
+        color: rgba($color-black,.3);
         cursor: pointer;
     }
 }

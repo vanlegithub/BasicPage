@@ -8,25 +8,25 @@ html
 {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    @include respond (phone)
+    @include respond (mini-mobile)
     {
-        font-size: 40%;
+        font-size: 37.5%;
     }
-    @include respond (miniphone)
+    @include respond (mobile)
     {
-        font-size: 30%;
+        font-size: 43.75%;
     }
-    @include respond (tab-land)
-    {
-        font-size: 56.25%;
-    }
-    @include respond (tab-port)
+    @include respond (p-tablet)
     {
         font-size: 50%;
     }
-    @include respond (big-desktop)
+    @include respond (laptop)
     {
-        font-size: 80%;
+        font-size: 56.25%;
+    }
+    @include respond (desktop)
+    {
+        font-size: 68.75%;
     }
 }
 body

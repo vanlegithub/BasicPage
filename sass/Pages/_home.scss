@@ -19,16 +19,25 @@
 {
     background-color: $color-gray-light;
     padding: 3rem 2rem;
+    font-size: $default-font-size;
+    @include respond (mobile)
+    {
+        font-size: 1rem;
+    }
+    @include respond (mini-mobile)
+    {
+        font-size: 1rem;
+    }
 }
 .section-form
 {
     display: flex;
     justify-content: space-evenly;
-    @include respond (phone)
+    @include respond (mobile)
     {
         flex-direction: column;
     }
-    @include respond (miniphone)
+    @include respond (mini-mobile)
     {
         flex-direction: column;
     }

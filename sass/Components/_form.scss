@@ -1,7 +1,13 @@
 .form-left
 {
     flex-basis: 30%;
-    @include respond (phone)
+    @include respond (mobile)
+    {
+        flex-basis: 50%;
+        margin: auto;
+        padding: 2rem 1rem;
+    }
+    @include respond (mini-mobile)
     {
         flex-basis: 50%;
         margin: auto;
@@ -11,7 +17,13 @@
 .form-right
 {
     flex-basis: 30%;
-    @include respond (phone)
+    @include respond (mobile)
+    {
+        flex-basis: 50%;
+        margin: auto; 
+        padding: 2rem 1rem;
+    }
+    @include respond (mini-mobile)
     {
         flex-basis: 50%;
         margin: auto; 
@@ -29,7 +41,12 @@
     margin: 2.4rem;
     align-self: center;
     box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
-    @include respond (phone)
+    @include respond (mobile)
+    {
+        padding: 0;
+        margin: 0;
+    }
+    @include respond (mini-mobile)
     {
         padding: 0;
         margin: 0;
@@ -43,7 +60,7 @@
 .form .desc 
 {
     text-align: center;
-    color: #636d77;
+    color: $color-text;
     font-size: 1.6rem;
     font-weight: lighter;
     line-height: 2.4rem;
@@ -76,7 +93,7 @@
 {
     height: 40px;
     padding: 0.8rem 1.2rem;
-    border: 1px solid #b3b3b3;
+    border: 1px solid $color-primary-dark;
     border-radius: 3px;
     outline: none;
     font-size: 1.4rem;
@@ -89,12 +106,12 @@
 
 .form-group.invalid .form-control 
 {
-    border-color: #f33a58;
+    border-color: $color-deny;
 }
 
 .form-group.invalid .form-message 
 {
-    color: #f33a58;
+    color: $color-deny;
 }
 
 .form-message 
@@ -111,7 +128,7 @@
     margin-top: 1.2rem;
     padding: 1.2rem 1.6rem;
     font-weight: 600;
-    color: #fff;
+    color: $color-gray-light;
     border: none;
     width: 100%;
     font-size: 1.4rem;

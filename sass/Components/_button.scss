@@ -36,23 +36,15 @@
     }
     &--warn 
     {
-        background-color: rgba(255, 183, 2, 0.9);
+        background-color: $color-warn;
     } 
     &--deny 
     {
-        background-color: rgba(255, 98, 61, 0.6);
+        background-color: rgba($color-deny, 0.6);
     }
     &--infor
     {
         background-color: $color-white;
-        @include respond (phone)
-        {
-            padding: 0.5rem 2.5rem;
-        }  
-        @include respond (miniphone)
-        {
-            padding: 0.5rem 2.5rem;
-        }
     }
     &--disabled, &[disabled] 
     {
