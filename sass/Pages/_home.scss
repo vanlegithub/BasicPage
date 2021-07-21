@@ -3,30 +3,41 @@
 }
 .section-about
 {
-    padding-bottom: 12rem;
+    margin-bottom: 4rem;
 }
 .section-social
 {
     background-image: url("/img/background3.jpg");
     background-size: cover;
-    padding: 4rem 0rem 20rem 0rem;
+    padding: 1rem 0rem 10rem 0rem;
 }
 .section-feature
 {
-    padding: 4rem 0rem 15rem 0rem;
+    padding: 0rem;
 }
 .section-content 
 {
     background-color: $color-gray-light;
     padding: 3rem 2rem;
-    font-size: $default-font-size;
-    @include respond (mobile)
-    {
-        font-size: 1rem;
-    }
     @include respond (mini-mobile)
     {
-        font-size: 1rem;
+        font-size: 56.25%;
+    }
+    @include respond (mobile)
+    {
+        font-size: 62.5%;
+    }
+    @include respond (p-tablet)
+    {
+        font-size: 75%;
+    }
+    @include respond (laptop)
+    {
+        font-size: 87.5%;
+    }
+    @include respond (desktop)
+    {
+        font-size: 100%;
     }
 }
 .section-form

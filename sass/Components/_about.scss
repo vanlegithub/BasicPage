@@ -7,6 +7,16 @@
 {
     position: relative;
     flex-basis: 35%;
+    @include respond (mobile)
+    {
+        flex-basis: 0%;
+        display: none;
+    }
+    @include respond (mini-mobile)
+    {
+        flex-basis: 0%;
+        display: none;
+    }
     &__photo
     {
         width: 60%;
@@ -28,7 +38,7 @@
         &--p3
         {
             right: 35%;
-            top: 45%;
+            top: 35%;
         }
         &:hover
         {
@@ -40,6 +50,14 @@
 .content-left
 {
     flex-basis: 55%;
+    @include respond (mobile)
+    {
+        flex-basis: 90%;
+    }
+    @include respond (mini-mobile)
+    {
+        flex-basis: 90%;
+    }
 }
 
 

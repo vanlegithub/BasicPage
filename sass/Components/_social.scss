@@ -14,9 +14,9 @@
 }
 .social-box
 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     flex-basis: 22%;
-    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    padding: 1.7rem;
     @include respond (mobile)
     {
         padding: 1rem 1rem 2rem 1rem;
@@ -27,14 +27,14 @@
         padding: 1rem 1rem 2rem 1rem;
         margin-top: 1rem;
     }
-    text-align: center;
+    text-align: justify;
     border-radius: 5rem;
     transition: all .2s;
     background-color: rgba($color: $color-white, $alpha: 0.8);
     &__icon
     {
-        font-size: 6rem;
-        margin-bottom: 1.5rem;
+        font-size: 4rem;
+        margin-bottom: 1rem;
         display: inline-block;
         background-color: $color-black;
         -webkit-background-clip: text;
@@ -43,6 +43,10 @@
     &:hover
     {
         cursor: pointer;
-        transform: translateY(-1rem) scale(1.2);
+        transform: translateY(-1rem) scale(1.1);
+    }
+    &--heading
+    {
+        text-align: center;
     }
 }

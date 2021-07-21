@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/sass/style.css">
 
 </head>
 
@@ -111,10 +111,12 @@
             </div>
             <div class="social-ctn">
                 <div class="social-box">
-                    <a href="https://www.facebook.com/vanleprofile/" target="_blank">
-                        <i class=" social-box__icon fab fa-facebook-square"></i>
-                    </a>
-                    <h3>My Facebook</h3>
+                    <div class="social-box--heading">
+                        <a href="https://www.facebook.com/vanleprofile/" target="_blank">
+                            <i class=" social-box__icon fab fa-facebook-square"></i>
+                        </a>
+                        <h3>My Facebook</h3>
+                    </div>
                     <p>
                         Facebook is an American online social media and social networking service owned by Facebook, Inc.
                         Founded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates Eduardo Saverin,
@@ -122,10 +124,12 @@
                     </p>
                 </div>
                 <div class="social-box">
-                    <a href="https://www.instagram.com/__van.le__/" target="_blank">
-                        <i class=" social-box__icon fab fa-instagram-square"></i>
-                    </a>
-                    <h3>My Instagram</h3>
+                    <div class="social-box--heading">
+                        <a href="https://www.instagram.com/__van.le__/" target="_blank">
+                            <i class=" social-box__icon fab fa-instagram-square"></i>
+                        </a>
+                        <h3>My Instagram</h3>
+                    </div>
                     <p>
                         Instagram (commonly abbreviated to IG, Insta or the gram) is an American photo and video sharing 
                         social networking service created by Kevin Systrom and Mike Krieger. 
@@ -133,10 +137,12 @@
                     </p>
                 </div>
                 <div class="social-box">
-                    <a href="https://github.com/vanlegithub/" target="_blank">
-                        <i class=" social-box__icon fab fa-github-square"></i>
-                    </a>
-                    <h3>My Github</h3>
+                    <div class="social-box--heading">
+                        <a href="https://github.com/vanlegithub/" target="_blank">
+                            <i class=" social-box__icon fab fa-github-square"></i>
+                        </a>
+                        <h3>My Github</h3>
+                    </div>
                     <p>
                         GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. 
                         It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features.
@@ -144,10 +150,12 @@
                     </p>
                 </div>
                 <div class="social-box">
-                    <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
-                        <i class=" social-box__icon fab fa-linkedin"></i>
-                    </a>
-                    <h3>My Linkedin</h3>
+                    <div class="social-box--heading">
+                        <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
+                            <i class=" social-box__icon fab fa-linkedin"></i>
+                        </a>
+                        <h3>My Linkedin</h3>
+                    </div>
                     <p>
                         linkedIn is an American business and employment-oriented online service that operates via websites and mobile apps. 
                         Launched on May 5, 2003, the platform is mainly used for professional networking, and allows job seekers to post their 
@@ -261,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="u-center-text btn-center">
+            <div class="u-center-text u-margin-bottom-small">
                 <div onclick="showThanksToast();" class="btn btn--success btn--size-s">Like <i
                         class="far fa-thumbs-up"></i></div>
                 <div onclick="showSorryToast();" class="btn btn--deny btn--size-s">Dislike <i

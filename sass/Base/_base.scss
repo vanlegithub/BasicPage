@@ -10,23 +10,23 @@ html
     scroll-behavior: smooth;
     @include respond (mini-mobile)
     {
-        font-size: 37.5%;
+        font-size: 56.25%;
     }
     @include respond (mobile)
     {
-        font-size: 43.75%;
-    }
-    @include respond (laptop)
-    {
-        font-size: 56.25%;
+        font-size: 62.5%;
     }
     @include respond (p-tablet)
     {
-        font-size: 50%;
+        font-size: 75%;
+    }
+    @include respond (laptop)
+    {
+        font-size: 87.5%;
     }
     @include respond (desktop)
     {
-        font-size: 68.75%;
+        font-size: 100%;
     }
 }
 body

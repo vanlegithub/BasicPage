@@ -2,8 +2,8 @@
 {
     display: flex;
     justify-content: space-between;
-    height: 20rem;
-    font-size: 1.4rem;
+    height: 12rem;
+    font-size: 1rem;
     overflow: hidden;
     padding: 0 5rem;
     color: $color-primary-light;
@@ -15,8 +15,8 @@
     }
     &__logo
     {
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
       
     }
     &__navigation

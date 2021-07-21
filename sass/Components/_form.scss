@@ -1,6 +1,6 @@
 .form-left
 {
-    flex-basis: 30%;
+    flex-basis: 40%;
     @include respond (mobile)
     {
         flex-basis: 50%;
@@ -16,7 +16,7 @@
 }
 .form-right
 {
-    flex-basis: 30%;
+    flex-basis: 40%;
     @include respond (mobile)
     {
         flex-basis: 50%;
@@ -32,15 +32,15 @@
 }
 .form 
 {
-    width: 36rem;
-    min-height: 10rem;
+    width: 28rem;
+    min-height: 8rem;
     padding: 3.2rem 2.4rem;
     text-align: center;
-    background: #fff;
+    background: $color-white;
     border-radius: 2px;
     margin: 2.4rem;
     align-self: center;
-    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+    box-shadow: 0 2px 10px 0 rgba(51,62,73,.1);
     @include respond (mobile)
     {
         padding: 0;
@@ -54,14 +54,14 @@
 }
 .form .heading 
 {
-    font-size: 2rem;
+    font-size: $default-font-size;
 }
 
 .form .desc 
 {
     text-align: center;
     color: $color-text;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: lighter;
     line-height: 2.4rem;
     margin-top: 1.6rem;
@@ -86,17 +86,17 @@
     font-weight: 700;
     padding-bottom: 6px;
     line-height: 1.8rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .form-control 
 {
-    height: 40px;
+    height: 35px;
     padding: 0.8rem 1.2rem;
     border: 1px solid $color-primary-dark;
     border-radius: 3px;
     outline: none;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .form-control:hover 
@@ -116,7 +116,7 @@
 
 .form-message 
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6rem;
     padding: 0.4rem 0 0;
 }
@@ -126,12 +126,12 @@
     outline: none;
     background-color: $color-primary-dark;
     margin-top: 1.2rem;
-    padding: 1.2rem 1.6rem;
+    padding: 1rem 1.3rem;
     font-weight: 600;
     color: $color-gray-light;
     border: none;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
 }
