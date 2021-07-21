@@ -132,12 +132,12 @@ html {
   @media (min-width: 481px) and (max-width: 767px) {
     html {
       font-size: 43.75%; } }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    html {
-      font-size: 50%; } }
   @media (min-width: 1025px) and (max-width: 1280px) {
     html {
       font-size: 56.25%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    html {
+      font-size: 50%; } }
   @media (min-width: 1281px) {
     html {
       font-size: 68.75%; } }
@@ -471,7 +471,7 @@ body {
   min-width: 100px;
   transition: all .2s ease;
   user-select: none;
-  text-align: center;
+  text-align: right;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
   .btn--size-l {
     padding: 1.2rem 4.0rem; }

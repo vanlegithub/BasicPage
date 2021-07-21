@@ -1,38 +1,162 @@
-@keyframes animationTopDown {
-  0% {
-    opacity: 0;
-    transform: translate(0, -100px);
-  }
-  80% {
-    transform: translate(0, -20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
+* {
   padding: 0;
-  box-sizing: inherit;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 1281px) {
+  html {
+    font-size: 68.75%;
+  }
 }
 
 body {
@@ -43,24 +167,18 @@ body {
   font-family: "Lato", sans-serif;
   color: #787878;
   font-weight: 500;
-  font-size: 1.6rem;
   line-height: 1.5;
-  padding: 2rem;
 }
 
 .heading-primary {
   color: white;
   text-transform: uppercase;
   margin-bottom: 6rem;
-  animation-name: animationTopDown;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-delay: 0s;
 }
 
 .heading-primary--main {
   display: block;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
 }
@@ -73,13 +191,13 @@ body {
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 900;
   display: inline-block;
   letter-spacing: 0.5rem;
   cursor: pointer;
-  background-image: linear-gradient(to right, #d8c3a5, #5d5c61);
+  background-image: linear-gradient(to right, #5d5c61, black);
   color: transparent;
   -webkit-background-clip: text;
   transition: all 0.2s;
@@ -91,14 +209,14 @@ body {
 }
 
 .heading-summary {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
   font-size: 1.7rem;
-  text-align: left;
+  text-align: justify;
 }
 
 .paragraph:not(:last-child) {
@@ -106,77 +224,23 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(93, 92, 97, 0.5), rgba(216, 195, 165, 0.8)), url("/img/background1.jpg");
-  clip-path: polygon(0 0, 100% 3%, 100% 90%, 0 94%);
-  background-size: cover;
-  background-position: top;
+  display: flex;
   position: relative;
   height: 100vh;
+  background-image: url("/img/background1.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 .header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
   text-align: center;
 }
 
 .header__logo {
-  height: 7rem;
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-}
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-
-.row [class^="col-"] {
-  float: left;
-}
-
-.row [class^="col-"]:not(:last-child) {
-  margin-bottom: 6rem;
-}
-
-.row .col-1-of-2 {
-  width: calc((100%-6rem)/2);
-}
-
-.row .col-1-of-3 {
-  width: calc((100%-2*6rem)/3);
-}
-
-.row .col-2-of-3 {
-  width: calc(2*(100%-2*6rem)/3)+6rem;
-}
-
-.row .col-1-of-4 {
-  width: calc((100%-3*6rem)/4);
-}
-
-.row .col-2-of-4 {
-  width: calc(1*(100%-3*6rem)/2)+6rem;
-}
-
-.row .col-3-of-4 {
-  width: calc(3*(100%-3*6rem)/4)2*6rem;
+  display: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .u-center-text {
@@ -184,47 +248,107 @@ body {
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem !important;
-  margin-top: 3rem;
+  margin: 6rem !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.btn-center {
+  margin-top: 6rem !important;
 }
 
 .footer {
-  background-color: #5d5c61;
-  padding: 10rem 0;
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
   font-size: 1.4rem;
+  overflow: hidden;
+  padding: 0 5rem;
   color: #d8c3a5;
-  height: 50vh;
+  background-color: black;
 }
 
 .footer__logo-box {
-  text-align: center;
-  margin-bottom: 8rem;
+  flex-basis: 45%;
+  margin: auto;
 }
 
 .footer__logo {
-  width: 10rem;
-  height: auto;
-}
-
-.footer__copyright {
-  border-top: 1px solid #d8c3a5;
-  padding-top: 2rem;
-  width: 70%;
-  float: right;
+  width: 8rem;
+  height: 8rem;
 }
 
 .footer__navigation {
-  border-top: 1px solid #d8c3a5;
   padding-top: 2rem;
-  display: inline-block;
+  flex-basis: 45%;
+  margin: auto;
+  text-align: right;
 }
 
 .footer__list {
   list-style: none;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer__list {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer__list {
+    display: none;
+  }
 }
 
 .footer__item {
@@ -235,268 +359,569 @@ body {
   margin-right: 3rem;
 }
 
+.footer__copyright {
+  padding-top: 2rem;
+}
+
 .footer__link:link, .footer__link:visited {
   color: #d8c3a5;
-  background-color: #5d5c61;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5rem;
   transition: all .2s;
 }
 
-.footer__link:hover, .footer__link:active {
-  color: #d8c3a5;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  transform: rotate(5deg) scale(1.1);
+.footer__link:hover {
+  opacity: 0.8;
 }
 
 .section-about {
-  background-color: #f7f7f7;
-  padding: 20rem 0;
-  margin-top: -25rem;
+  padding-bottom: 12rem;
 }
 
-.section-socials {
-  background-image: linear-gradient(to left top, rgba(216, 195, 165, 0.2), rgba(93, 92, 97, 0.8)), url("/img/background2.jpg");
+.section-social {
+  background-image: url("/img/background3.jpg");
   background-size: cover;
-  position: relative;
-  padding: 15rem 0;
-  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-  margin-top: -20rem;
+  padding: 4rem 0rem 20rem 0rem;
 }
 
-.section-skills {
+.section-feature {
+  padding: 4rem 0rem 15rem 0rem;
+}
+
+.section-content {
   background-color: #f7f7f7;
-  padding: 5rem 0;
-}
-
-.section-favorite {
-  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.5), rgba(115, 149, 174, 0.3)), url("/img/background4.jpg");
-  background-size: cover;
-  position: relative;
-  padding: 5rem 0;
-}
-
-.section-contact {
-  padding: 10rem 0;
-  background-image: linear-gradient(to left top, #d8c3a5, #5d5c61);
-}
-
-.button:link, .button:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 100px;
+  padding: 3rem 2rem;
   font-size: 1.6rem;
-  position: relative;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
-.button--white {
-  color: #787878;
+@media (min-width: 481px) and (max-width: 767px) {
+  .section-content {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-content {
+    font-size: 1rem;
+  }
+}
+
+.section-form {
+  display: flex;
+  justify-content: space-evenly;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .section-form {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-form {
+    flex-direction: column;
+  }
+}
+
+@keyframes growth {
+  from {
+    opacity: 0;
+    height: calc(var(--percent) - 50%);
+  }
+  to {
+    opacity: 1;
+    height: var(--percent);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0.8rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 100px;
+  transition: all .2s ease;
+  user-select: none;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn--size-l {
+  padding: 1.2rem 4.0rem;
+}
+
+.btn--size-s {
+  padding: 0.6rem 2.5rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn + .btn {
+  margin-left: 1.6rem;
+}
+
+.btn--success {
+  background-color: #557a95;
+}
+
+.btn--warn {
+  background-color: #ffb702;
+}
+
+.btn--deny {
+  background-color: rgba(255, 98, 61, 0.6);
+}
+
+.btn--infor {
   background-color: white;
 }
 
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+.btn--disabled, .btn[disabled] {
+  opacity: 0.5 !important;
+  pointer-events: none;
 }
 
-.button:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+.content-ctn {
+  display: flex;
+  justify-content: space-around;
 }
 
-.button:active {
-  outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.button::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 100px;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.button--animated {
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
-}
-
-.button--dark {
-  background-color: #5d5c61;
-  color: white;
-}
-
-.button--dark::after {
-  background-color: #5d5c61;
-}
-
-.button-text {
-  transition: all .2s;
-}
-
-.button-text:link, .button-text:visited {
-  color: #5d5c61;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #5d5c61;
-  padding: .3rem;
-  font-size: 1.6rem;
-}
-
-.button-text:hover {
-  background-color: #5d5c61;
-  color: white;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translate(-0.5rem);
-}
-
-.button-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0.5rem);
-}
-
-.composition {
+.content-right {
   position: relative;
+  flex-basis: 35%;
 }
 
-.composition__photo {
-  width: 50%;
-  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.5);
+.content-right__photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 10;
   outline-offset: 0.5rem;
-  transition: all .2s;
+  transition: all .3s;
 }
 
-.composition__photo--p1 {
+.content-right__photo--p1 {
   left: 0%;
   top: 0%;
 }
 
-.composition__photo--p2 {
-  right: 5rem;
-  top: 2rem;
+.content-right__photo--p2 {
+  left: 40%;
+  top: 15%;
 }
 
-.composition__photo--p3 {
-  left: 15%;
-  top: 12rem;
+.content-right__photo--p3 {
+  right: 35%;
+  top: 45%;
 }
 
-.composition__photo:hover {
+.content-right__photo:hover {
   transform: scale(1.3);
-  outline: 1.2rem solid #d8c3a5;
-  box-shadow: 0 2.5rem 4rem rgba(216, 195, 165, 0.5);
   z-index: 20;
 }
 
-.skill-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem 2.5rem 4rem 2.5rem;
-  text-align: center;
-  border-radius: 5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  margin-top: 10rem;
-  width: 90%;
-  transition: all .2s;
+.content-left {
+  flex-basis: 55%;
 }
 
-.skill-box__icon {
+.social-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .social-ctn {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .social-ctn {
+    flex-direction: column;
+  }
+}
+
+.social-box {
+  font-size: 1.5rem;
+  flex-basis: 22%;
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  text-align: center;
+  border-radius: 5rem;
+  transition: all .2s;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .social-box {
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .social-box {
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.social-box__icon {
   font-size: 6rem;
   margin-bottom: 1.5rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #d8c3a5, #5d5c61);
+  background-color: black;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.skill-box:hover {
+.social-box:hover {
   cursor: pointer;
-  transform: translateY(-1.5rem) scale(1.1);
+  transform: translateY(-1rem) scale(1.2);
 }
 
-.card {
-  perspective: 150rem;
+.feature-ctn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.feature {
   position: relative;
+  flex-basis: 30%;
   height: 40rem;
-  width: 90%;
-  margin-bottom: -5rem;
-  margin-top: -5rem;
 }
 
-.card__side {
-  color: white;
-  font-size: 2rem;
-  height: 45rem;
-  transition: all .8s ease;
+.feature__side {
   position: absolute;
-  top: 0;
-  left: 0;
+  height: 40rem;
   width: 100%;
+  border-radius: 5rem;
+  transition: all .8s ease;
+  overflow: hidden;
   backface-visibility: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  border-radius: 5rem;
-  overflow: hidden;
+  color: white;
 }
 
-.card__side--front {
+.feature__side--front {
   background-color: white;
 }
 
-.card__side--back {
-  background-color: green;
+.feature__side--back {
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
   transform: rotateY(180deg);
 }
 
-.card__side--back-1 {
+@media (min-width: 320px) and (max-width: 480px) {
+  .feature__side--back {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .feature__side--back {
+    display: none;
+  }
+}
+
+.feature__side--back-1 {
   background-image: linear-gradient(to right, #7395ae, #787878);
 }
 
-.card__side--back-2 {
+.feature__side--back-2 {
   background-image: linear-gradient(to right, #d8c3a5, #5d5c61);
 }
 
-.card__side--back-3 {
-  background-image: linear-gradient(to right, #e7717d, #787878);
+.feature__side--back-3 {
+  background-image: linear-gradient(to right, #7395ae, #787878);
 }
 
-.card__picture {
+.feature__picture {
   background-size: cover;
   background-blend-mode: screen;
   height: 23rem;
   clip-path: ellipse(80% 70% at 50% 30%);
 }
 
-.card__picture--1 {
+.feature__picture--1 {
   background-image: linear-gradient(to right, #7395ae, #557a95), url("/img/box1.jpg");
 }
 
-.card__picture--2 {
+.feature__picture--2 {
   background-image: linear-gradient(to right, #d8c3a5, #5d5c61), url("/img/box2.jpg");
 }
 
-.card__picture--3 {
-  background-image: linear-gradient(to right, #e7717d, #787878), url("/img/box3.jpg");
+.feature__picture--3 {
+  background-image: linear-gradient(to right, #7395ae, #787878), url("/img/box3.jpg");
 }
 
-.card__heading {
-  font-size: 2.8rem;
-  font-weight: 300;
+.feature__heading {
+  font-size: 2.5rem;
+  font-weight: 350;
   text-align: right;
   text-transform: uppercase;
   color: white;
@@ -504,48 +929,171 @@ body {
   top: 12rem;
   right: 2rem;
   width: 75%;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
-.card__heading-span {
+@media (min-width: 481px) and (max-width: 767px) {
+  .feature__heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feature__heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.feature__heading-span {
   border-radius: 5rem;
-  padding: 1rem 1.5rem;
+  padding: 0.3rem 1.3rem;
   -webkit-box-decoration-break: clone;
 }
 
-.card__heading-span--1 {
+.feature__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(115, 149, 174, 0.85), rgba(85, 122, 149, 0.85));
 }
 
-.card__heading-span--2 {
+.feature__heading-span--2 {
   background-image: linear-gradient(to right bottom, rgba(216, 195, 165, 0.85), rgba(93, 92, 97, 0.85));
 }
 
-.card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(231, 113, 125, 0.85), rgba(120, 120, 120, 0.85));
+.feature__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(120, 120, 120, 0.85));
 }
 
-.card__details {
-  padding: 3rem;
+.feature__details {
+  padding: 1rem;
   color: #787878;
 }
 
-.card__details ul {
+.feature__details ul {
   list-style: none;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 
-.card__details ul li {
+.feature__details ul li {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 1rem;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #dbdbdb;
+.feature__details ul li:not(:last-child) {
+  border-bottom: 0.5px solid #787878;
 }
 
-.card__cta {
+@media (min-width: 481px) and (max-width: 767px) {
+  .feature__details ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feature__details ul li {
+    font-size: 1.5rem;
+  }
+}
+
+.feature__cta {
+  margin-top: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -554,397 +1102,782 @@ body {
   width: 90%;
 }
 
-.card__price-box {
+.feature__price-box {
   text-align: center;
   color: white;
   margin-bottom: 8rem;
 }
 
-.card__price-only {
+.feature__price-only {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-.card__price-value {
-  font-size: 6rem;
+.feature__price-value {
+  font-size: 4rem;
   font-weight: 100;
   margin-bottom: 5rem;
 }
 
-.card:hover .card__side--front {
+.feature:hover .feature__side--front {
   transform: rotateY(-180deg);
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
-.card:hover .card__side--back {
+@media (min-width: 481px) and (max-width: 767px) {
+  .feature:hover .feature__side--front {
+    transform: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feature:hover .feature__side--front {
+    transform: none;
+  }
+}
+
+.feature:hover .feature__side--back {
   transform: rotateY(0);
 }
 
-.favorite {
-  width: 80%;
-  padding: 6rem;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 20px;
+  width: 100%;
+  z-index: 900;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list > li {
+  display: inline-block;
+}
+
+.nav-list > li > a {
+  color: #f7f7f7;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  line-height: 38px;
+  padding: 0 1.5rem;
+  display: block;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-list li a {
+    padding: 0 0.5rem;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav-list li a {
+    padding: 0 0.2rem;
+    line-height: 26px;
+  }
+}
+
+.nav-list li:hover a {
+  color: black;
+  background-color: white;
+}
+
+.nav-list .subnav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.nav-list li:hover .subnav {
+  display: block;
+}
+
+.nav-list > li:hover > a,
+.nav-list .subnav li:hover a {
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.layout-ctn {
+  display: flex;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .layout-ctn {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .layout-ctn {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.column-item {
+  padding: 0 1.6rem;
+  text-align: justify;
+}
+
+.sidebar-one {
+  flex: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+}
+
+.main-column {
+  flex: 3;
+}
+
+.chart-layout {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3.6rem auto 3.6rem auto;
+  padding: 3.2rem 0;
+  height: 32rem;
+  background-color: white;
+}
+
+.chart-layout__item {
+  align-self: flex-end;
+  width: 8rem;
+  color: white;
+  text-align: center;
+  height: var(--percent);
+  background-color: #5d5c61;
+  animation: growth ease-in 0.5s;
+}
+
+.end-ctn {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15rem;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .end-ctn {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .end-ctn {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.the-end__first {
+  padding: 0.4rem 1.6rem;
+  background-color: #b1a296;
+  flex: 1;
+  text-align: justify;
+}
+
+.the-end__second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #d8c3a5;
+  text-align: justify;
+}
+
+.the-end__second-one {
+  flex: 1;
+  padding: 0.4rem 1.6rem;
+  background-color: white;
+}
+
+.the-end__second-two {
+  flex: 1;
+  padding: 0.4rem 1.6rem;
+  background-color: #c0d2e3;
+}
+
+#toast {
+  position: fixed;
+  top: 46px;
+  right: 0;
+  z-index: 999999;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  padding: 2rem 0;
+  min-width: 200px;
+  max-width: 350px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(93, 92, 97, 0.3);
+  transition: all linear 0.3s;
+}
+
+.toast--success {
+  border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+  color: #47d864;
+}
+
+.toast--info {
+  border-color: #2f86eb;
+}
+
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
+
+.toast--warning {
+  border-color: #ffb702;
+}
+
+.toast--warning .toast__icon {
+  color: #ffb702;
+}
+
+.toast--error {
+  border-color: #ff623d;
+}
+
+.toast--error .toast__icon {
+  color: #ff623d;
+}
+
+.toast + .toast {
+  margin-top: 2.4rem;
+}
+
+.toast__icon {
+  font-size: 2.4rem;
+}
+
+.toast__icon, .toast__close {
+  padding: 0 1.6rem;
+}
+
+.toast__body {
+  flex-grow: 1;
+}
+
+.toast__title {
   font-size: 1.6rem;
-  border-radius: 100rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 9rem;
+  font-weight: 600;
   color: black;
 }
 
-.favorite__shape {
-  width: 15rem;
-  height: 15rem;
-  background-color: orangered;
-  float: left;
-  position: relative;
-  clip-path: circle(50% at 50%);
-  transform: translateX(-3rem);
-  margin-top: -1rem;
-  shape-outside: circle(50% at 50% 50%);
+.toast__msg {
+  font-size: 1.4rem;
+  color: #787878;
+  margin-top: 6px;
+  line-height: 1.5;
 }
 
-.favorite__img {
-  width: 100%;
-  height: 100%;
-  transition: all .3s;
+.toast__close {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-.favorite__caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.7rem;
+.form-left {
+  flex-basis: 30%;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-left {
+    flex-basis: 50%;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-left {
+    flex-basis: 50%;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+}
+
+.form-right {
+  flex-basis: 30%;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-right {
+    flex-basis: 50%;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-right {
+    flex-basis: 50%;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+}
+
+.form {
+  width: 36rem;
+  min-height: 10rem;
+  padding: 3.2rem 2.4rem;
   text-align: center;
-  opacity: 0;
-  transition: all .5s;
+  background: #fff;
+  border-radius: 2px;
+  margin: 2.4rem;
+  align-self: center;
+  box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
-.favorite:hover .favorite__caption {
-  opacity: 1;
-  transform: translate(-50%, -50%);
+@media (min-width: 481px) and (max-width: 767px) {
+  .form {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.favorite:hover .favorite__img {
-  filter: blur(0.5rem) brightness(70%);
-  transform: scale(1.1);
+@media (min-width: 320px) and (max-width: 480px) {
+  .form {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.contact {
-  background-image: radial-gradient(150% 200% ellipse at -15%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("/img/background5.jpg");
-  background-size: cover;
-  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
-  border-radius: 5rem;
-  height: 50rem;
+.form .heading {
+  font-size: 2rem;
 }
 
-.contact__form {
-  padding: 6rem;
-}
-
-.form__group:not(:last-child) {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  width: 60%;
-}
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  padding: 1.5rem 2rem;
-  color: inherit;
-  border: none;
-  border-radius: 1rem;
-  border-bottom: 3px solid transparent;
-  display: block;
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 80%;
-}
-
-.form__input:focus {
-  outline: none;
-  box-shadow: 0 1rem 2rem rbga(black, 0.15);
-  border-bottom: 3px solid #d8c3a5;
-}
-
-.form__input:focus:invalid {
-  border-bottom: 3px solid #b1a296;
-}
-
-.form__input::-webkit-input-placeholder {
-  color: #b1a296;
-}
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem);
-  transition: all .3s;
-}
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s;
-}
-
-.form__radio-group {
-  width: 45%;
-  display: inline-block;
-}
-
-.form__radio-label {
+.form .desc {
+  text-align: center;
+  color: #787878;
   font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 2rem;
-}
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 0.5rem solid #5d5c61;
-  border-radius: 10rem;
-  display: inline-block;
-  position: absolute;
-  left: -2rem;
-  top: -.5rem;
-}
-
-.form__radio-button::after {
-  opacity: 0;
-  content: "";
-  height: 1.2rem;
-  width: 1.2rem;
-  border: 0.5rem solid #5d5c61;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #5d5c61;
-}
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1;
-}
-
-.form__radio-input {
-  display: none;
-}
-
-.popup {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .5s;
-}
-
-.popup__img {
-  width: 100%;
-  height: 60vh;
-  display: block;
-}
-
-.popup__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  background-color: white;
-  border-radius: 3rem;
-  overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.5);
-}
-
-.popup__left {
-  width: 33.33%;
-  display: table-cell;
-}
-
-.popup__right {
-  width: 66.67%;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 3rem 5rem;
-}
-
-.popup__text {
-  font-size: 1.8rem;
-  margin-bottom: 4rem;
-  column-count: 2;
-  column-gap: 4rem;
-  column-rule: 1px solid #d8c3a5;
-  hyphens: auto;
-}
-
-.popup__close:link, .popup__close:visited {
-  color: #d8c3a5;
-  position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
-  font-size: 3rem;
-  text-decoration: none;
-}
-
-.popup__close:hover {
-  color: #5d5c61;
-}
-
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup:target .popup__content {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all .4s .2s;
-}
-
-.navigation__checkbox {
-  display: none;
-}
-
-.navigation__button {
-  background-color: white;
-  height: 7rem;
-  width: 7rem;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  border-radius: 50%;
-  z-index: 2000;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
-}
-
-.navigation__background {
-  background-image: linear-gradient(to right bottom, rgba(93, 92, 97, 0.5), rgba(216, 195, 165, 0.8)), url("/img/background1.jpg");
-  height: 6rem;
-  width: 6rem;
-  position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
-  border-radius: 50%;
-  z-index: 1000;
-  transition: transform .8s;
-}
-
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(15);
-}
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%;
-}
-
-.navigation__nav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1500;
-  transition: all .8s;
-  opacity: 0;
-}
-
-.navigation__list {
-  position: absolute;
-  top: 47%;
-  left: 60%;
-  transform: translate(80%, -80%);
-  list-style: none;
-  text-align: center;
-}
-
-.navigation__item {
-  margin: 1rem;
-}
-
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-size: 3rem;
+  font-weight: lighter;
+  line-height: 2.4rem;
+  margin-top: 1.6rem;
   font-weight: 300;
-  padding: 1rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: radial-gradient(150% 200% ellipse at 115%, white 0%, white 50%, transparent 50%);
-  background-size: 252%;
-  transition: all .4s;
 }
 
-.navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
-  color: #5d5c61;
-  transform: translateX(1rem);
+.form-group {
+  display: flex;
+  margin-bottom: 1.6rem;
+  flex-direction: column;
 }
 
-.navigation__icon {
-  position: relative;
-  margin-top: 3.2rem;
+.form-label,
+.form-message {
+  text-align: left;
 }
 
-.navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 3.5rem;
-  height: .3rem;
+.form-label {
+  font-weight: 700;
+  padding-bottom: 6px;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+}
+
+.form-control {
+  height: 40px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #5d5c61;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.form-control:hover {
+  border-color: #5d5c61;
+}
+
+.form-group.invalid .form-control {
+  border-color: #ff623d;
+}
+
+.form-group.invalid .form-message {
+  color: #ff623d;
+}
+
+.form-message {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0.4rem 0 0;
+}
+
+.form-submit {
+  outline: none;
   background-color: #5d5c61;
-  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  font-weight: 600;
+  color: #f7f7f7;
+  border: none;
+  width: 100%;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.navigation__icon::before, .navigation__icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all .2s;
+.form-submit:hover {
+  background-color: #5d5c61;
 }
 
-.navigation__icon::before {
-  top: -.8rem;
-}
-
-.navigation__icon::after {
-  top: .8rem;
-}
-
-.navigation__button:hover .navigation__icon::before {
-  top: -1rem;
-}
-
-.navigation__button:hover .navigation__icon::after {
-  top: 1rem;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg);
+.spacer {
+  margin-top: 3.6rem;
 }
 /*# sourceMappingURL=main.css.map */
