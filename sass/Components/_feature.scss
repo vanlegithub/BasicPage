@@ -1,13 +1,13 @@
 .feature-ctn
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 .feature
 {
     position: relative;
-    flex-basis: 23%;
-    height: 32rem;
+    flex-basis: 22%;
+    height: 30rem;
     @include respond (mobile)
     {
         height: 28rem;

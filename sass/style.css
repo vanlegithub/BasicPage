@@ -131,7 +131,7 @@ html {
 
 @media (min-width: 320px) and (max-width: 480px) {
   html {
-    font-size: 56.25%;
+    font-size: 62.5%;
   }
 }
 
@@ -195,7 +195,7 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   display: inline-block;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   cursor: pointer;
   background-image: linear-gradient(to right, #5d5c61, black);
   color: transparent;
@@ -220,7 +220,7 @@ body {
 }
 
 .paragraph:not(:last-child) {
-  margin-bottom: 3rem;
+  margin: 2rem;
 }
 
 .header {
@@ -243,22 +243,20 @@ body {
   height: 2rem;
 }
 
-.u-center-text {
+.align-title-big {
   text-align: center !important;
+  margin: 4rem 0rem !important;
 }
 
-.u-margin-bottom-big {
-  margin: 4rem !important;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 3rem !important;
+.align-title-small {
+  text-align: center !important;
+  margin: 1rem 0rem !important;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 12rem;
+  height: 10rem;
   font-size: 1rem;
   overflow: hidden;
   padding: 0 5rem;
@@ -372,22 +370,22 @@ body {
 }
 
 .section-about {
-  margin-bottom: 4rem;
+  padding: 3rem 1rem 5rem 1rem;
 }
 
 .section-social {
   background-image: url("/img/background3.jpg");
   background-size: cover;
-  padding: 1rem 0rem 10rem 0rem;
+  padding: 2rem 1rem 9.5rem 1rem;
 }
 
 .section-feature {
-  padding: 0rem;
+  padding: 2rem 1rem;
 }
 
 .section-content {
   background-color: #f7f7f7;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 1rem 2rem;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -512,7 +510,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .section-content {
-    font-size: 56.25%;
+    font-size: 62.5%;
   }
 }
 
@@ -541,68 +539,7 @@ body {
 }
 
 .section-form {
-  display: flex;
-  justify-content: space-evenly;
-  /* 
-  Device = Most of the Smartphones Mobiles (Portrait)
-  Screen = B/w 320px to 479px
-*/
-  /* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-  /* 
-  Device = Tablets, Ipads (landscape)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Tablets, Ipads (portrait)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-  /* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
-  /* 
-  Device = Most of the Smartphones Mobiles (Portrait)
-  Screen = B/w 320px to 479px
-*/
-  /* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-  /* 
-  Device = Tablets, Ipads (landscape)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Tablets, Ipads (portrait)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-  /* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .section-form {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .section-form {
-    flex-direction: column;
-  }
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 @keyframes growth {
@@ -647,7 +584,7 @@ body {
   transition: all .2s ease;
   user-select: none;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 0.5rem;
 }
 
@@ -857,6 +794,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 2rem;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -993,7 +931,6 @@ body {
 
 .social-box__icon {
   font-size: 4rem;
-  margin-bottom: 1rem;
   display: inline-block;
   background-color: black;
   -webkit-background-clip: text;
@@ -1007,6 +944,7 @@ body {
 
 .social-box--heading {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .feature-ctn {
@@ -1016,8 +954,8 @@ body {
 
 .feature {
   position: relative;
-  flex-basis: 23%;
-  height: 32rem;
+  flex-basis: 22%;
+  height: 30rem;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -1803,7 +1741,7 @@ body {
 .end-ctn {
   display: flex;
   flex-direction: row;
-  padding: 0 15rem;
+  padding: 0rem 9rem 2rem 9rem;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -1982,32 +1920,10 @@ body {
   cursor: pointer;
 }
 
-.form-left {
-  flex-basis: 40%;
-  /* 
-  Device = Most of the Smartphones Mobiles (Portrait)
-  Screen = B/w 320px to 479px
-*/
-  /* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-  /* 
-  Device = Tablets, Ipads (landscape)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Tablets, Ipads (portrait)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-  /* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
+.form-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 5rem;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -2034,24 +1950,80 @@ body {
 */
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .form-left {
-    flex-basis: 50%;
-    margin: auto;
-    padding: 2rem 1rem;
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-ctn {
+    flex-direction: column;
   }
+}
+
+.form-left {
+  flex-basis: 30%;
+  margin: 0;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .form-left {
-    flex-basis: 50%;
-    margin: auto;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-left {
+    flex-basis: 40%;
   }
 }
 
 .form-right {
-  flex-basis: 40%;
+  flex-basis: 30%;
+  margin: 0;
   /* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
@@ -2100,100 +2072,31 @@ body {
   Device = Desktops
   Screen = 1281px to higher resolution desktops
 */
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .form-right {
-    flex-basis: 50%;
-    margin: auto;
-    padding: 2rem 1rem;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .form-right {
-    flex-basis: 50%;
-    margin: auto;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-right {
+    flex-basis: 40%;
   }
 }
 
 .form {
-  width: 28rem;
-  min-height: 8rem;
-  padding: 3.2rem 2.4rem;
+  padding: 2rem;
   text-align: center;
   background: white;
   border-radius: 2px;
-  margin: 2.4rem;
   align-self: center;
   box-shadow: 0 2px 10px 0 rgba(51, 62, 73, 0.1);
-  /* 
-  Device = Most of the Smartphones Mobiles (Portrait)
-  Screen = B/w 320px to 479px
-*/
-  /* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-  /* 
-  Device = Tablets, Ipads (landscape)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Tablets, Ipads (portrait)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-  /* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
-  /* 
-  Device = Most of the Smartphones Mobiles (Portrait)
-  Screen = B/w 320px to 479px
-*/
-  /* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-  /* 
-  Device = Tablets, Ipads (landscape)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Tablets, Ipads (portrait)
-  Screen = B/w 768px to 1024px
-*/
-  /* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-  /* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .form {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .form {
-    padding: 0;
-    margin: 0;
-  }
 }
 
 .form .heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .form .desc {
@@ -2208,7 +2111,7 @@ body {
 
 .form-group {
   display: flex;
-  margin-bottom: 1.6rem;
+  margin-bottom: 5px;
   flex-direction: column;
 }
 
@@ -2225,8 +2128,8 @@ body {
 }
 
 .form-control {
-  height: 35px;
-  padding: 0.8rem 1.2rem;
+  height: 30px;
+  padding: 0.5rem;
   border: 1px solid #5d5c61;
   border-radius: 3px;
   outline: none;
@@ -2254,7 +2157,7 @@ body {
 .form-submit {
   outline: none;
   background-color: #5d5c61;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   padding: 1rem 1.3rem;
   font-weight: 600;
   color: #f7f7f7;
@@ -2270,6 +2173,6 @@ body {
 }
 
 .spacer {
-  margin-top: 3.6rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

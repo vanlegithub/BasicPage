@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 2rem;
     @include respond (mobile)
     {
         flex-direction: column;
@@ -34,7 +35,6 @@
     &__icon
     {
         font-size: 4rem;
-        margin-bottom: 1rem;
         display: inline-block;
         background-color: $color-black;
         -webkit-background-clip: text;
@@ -48,5 +48,6 @@
     &--heading
     {
         text-align: center;
+        margin-bottom: 1rem;
     }
 }

@@ -10,7 +10,7 @@ html
     scroll-behavior: smooth;
     @include respond (mini-mobile)
     {
-        font-size: 56.25%;
+        font-size: 62.5%;
     }
     @include respond (mobile)
     {

@@ -31,7 +31,7 @@ body
     text-transform: uppercase;
     font-weight: 900;
     display: inline-block;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     cursor: pointer;
     background-image: linear-gradient(to right,$color-primary-dark, $color-black);
     color: transparent;
@@ -55,6 +55,6 @@ body
     text-align:justify;
     &:not(:last-child)
     {
-        margin-bottom: 3rem;
+        margin: 2rem;
     }
 }

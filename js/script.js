@@ -64,8 +64,8 @@ function showSuccessToast() {
     toast
         (
             {
-                title: "Thank you your click !!!",
-                message: "This function is not available yet.",
+                title: "Success!!!",
+                message: "Thank you.",
                 type: "success",
                 duration: 1500
             }
@@ -75,7 +75,7 @@ function showErrorToast() {
     toast
         (
             {
-                title: "Thank you your click !!!",
+                title: "Error!!!",
                 message: "This function is not available yet.",
                 type: "error",
                 duration: 1500
