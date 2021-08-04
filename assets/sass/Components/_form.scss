@@ -82,10 +82,10 @@
     border-radius: 3px;
     outline: none;
     font-size: 1rem;
-}
 
-.form-control:hover {
-    border-color: $color-primary-dark;
+    &:hover {
+        border-color: $color-primary-dark;
+    }
 }
 
 .form-group.invalid .form-control {
@@ -114,10 +114,10 @@
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
-}
 
-.form-submit:hover {
-    background-color: $color-primary-dark;
+    &:hover {
+        background-color: $color-primary-dark;
+    }
 }
 
 .spacer {

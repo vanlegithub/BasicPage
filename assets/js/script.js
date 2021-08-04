@@ -59,4 +59,17 @@ $(document).ready(
                 offset: '80%'
             }
         )
+        $('.section-contact').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.maps-left').addClass('animated fadeInUp');
+                    $('.contact-right').addClass('animated fadeInRight');
+                } else {
+                    $('.maps-left').removeClass('animated fadeInUp');
+                    $('.contact-right').removeClass('animated fadeInRight');
+                }
+            }, {
+                offset: '80%'
+            }
+        )
     })

@@ -180,8 +180,8 @@ body {
 
 .heading-primary--main {
   display: block;
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 5rem;
 }
@@ -547,6 +547,10 @@ body {
 }
 
 .section-form {
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.section-contact {
   padding: 1rem 1rem 0rem 1rem;
 }
 
@@ -1978,5 +1982,236 @@ body {
 
 .spacer {
   margin-top: 2rem;
+}
+
+.contact-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 1rem;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact-ctn {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-ctn {
+    flex-wrap: wrap;
+  }
+}
+
+.maps-left {
+  flex-basis: 60%;
+  margin: 0;
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .maps-left {
+    padding: 1rem 2rem;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .maps-left {
+    padding: 1rem 2rem;
+    flex-basis: 100%;
+  }
+}
+
+.contact-right {
+  flex-basis: 35%;
+  margin: 0;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+  /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+  /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact-right {
+    padding: 1rem 2rem;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-right {
+    flex-basis: 100%;
+  }
+}
+
+.contact-form {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 400px;
+}
+
+.contact-form,
+.contact-form button {
+  text-align: center;
+}
+
+.contact-control {
+  height: unset;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #787878;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-control::placeholder {
+  font-weight: 500;
+  color: #787878;
 }
 /*# sourceMappingURL=style.css.map */
