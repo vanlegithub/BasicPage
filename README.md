@@ -22,7 +22,9 @@
 - https://developer.mozilla.org/en-US/
 - https://visme.co/blog/website-color-schemes/
 - https://css-tricks.com/snippets/html/glyphs/
+- https://imagecompressor.com/
 - https://wowjs.uk 
+- https://picresize.com/
 ## More
 - https://www.linkedin.com/in/vanleprofile/
 - Continue to update more for the project in future

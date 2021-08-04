@@ -73,3 +73,40 @@ $(document).ready(
             }
         )
     })
+
+var loading = false; //to prevent duplicate
+
+function loadNewContent() {
+    $.ajax({
+        type: 'GET',
+        url: url_to_new_content,
+        success: function (data) {
+            if (data != "") {
+                loading = false;
+                $("#div-to-update").html(data);
+            }
+        }
+    });
+}
+
+//scroll DIV's Bottom 
+$('#div-to-update').on('scroll', function () {
+    if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+        if (!loading) {
+            loading = true;
+            loadNewContent(); //call function to load content when scroll reachs DIV bottom                
+        }
+    }
+})
+
+//scroll to PAGE's bottom
+var winTop = $(window).scrollTop();
+var docHeight = $(document).height();
+var winHeight = $(window).height();
+if ((winTop / (docHeight - winHeight)) > 0.95) {
+    if (!loading) {
+        loading = true;
+        loadNewContent(); //call function to load content when scroll reachs PAGE bottom                
+    }
+}
+

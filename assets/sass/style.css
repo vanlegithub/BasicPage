@@ -268,7 +268,7 @@ body {
   font-size: 1rem;
   overflow: hidden;
   padding: 0 5rem;
-  color: #787878;
+  color: white;
   background-color: rgba(0, 0, 0, 0.884);
 }
 
@@ -366,7 +366,7 @@ body {
 }
 
 .footer__link:link, .footer__link:visited {
-  color: #787878;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -2205,6 +2205,7 @@ body {
   border-radius: 0.6rem;
   border: 0.2rem solid #787878;
   font-weight: 500;
+  font-size: 1rem;
   display: flex;
   width: 100%;
   margin-bottom: 1rem;

@@ -53,9 +53,6 @@
     button {
         text-align: center;
     }
-
-    &,
-    input {}
 }
 
 .contact-control {
@@ -66,6 +63,7 @@
     border-radius: 0.6rem;
     border: 0.2rem solid $color-text;
     font-weight: 500;
+    font-size: 1rem;
     display: flex;
     width: 100%;
     margin-bottom: 1rem;
