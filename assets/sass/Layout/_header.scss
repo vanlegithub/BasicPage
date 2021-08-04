@@ -6,7 +6,7 @@
 
     background-size: cover;
     background-position: top;
-
+    z-index: 10;
     &__text-box {
         margin: auto;
         text-align: center;
@@ -17,5 +17,4 @@
         width: 2rem;
         height: 2rem;
     }
-
 }

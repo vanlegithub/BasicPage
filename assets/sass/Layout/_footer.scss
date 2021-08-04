@@ -5,7 +5,7 @@
     font-size: 1rem;
     overflow: hidden;
     padding: 0 5rem;
-    color: $color-primary-light;
+    color: $color-text;
     background-color: $color-black;
 
     &__logo-box {
@@ -53,7 +53,7 @@
 
         &:link,
         &:visited {
-            color: $color-primary-light;
+            color: $color-text;
             text-transform: uppercase;
             text-decoration: none;
             display: inline-block;

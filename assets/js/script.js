@@ -1,68 +1,62 @@
-import Validator from './validator.js';
-
-Validator.isRequired = function (selector, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value ? undefined : message || 'Please enter this field'
-        }
-    };
-}
-Validator.isEmail = function (selector, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(value) ? undefined : message || 'This field must be email';
-        }
-    };
-}
-Validator.minLength = function (selector, min, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value.length >= min ? undefined : message || `Please enter at least ${min} characters`;
-        }
-    };
-}
-Validator.isConfirmed = function (selector, getConfirmValue, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value === getConfirmValue() ? undefined : message || 'Input value is incorrect';
-        }
-    }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    Validator
-        ({
-            form: '#form-1',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-                Validator.isRequired('#fullname', 'Enter fullname again'),
-                Validator.isEmail('#email'),
-                Validator.minLength('#password', 6),
-                Validator.isRequired('#password_confirmation'),
-                Validator.isConfirmed('#password_confirmation', function () {
-                    return document.querySelector('#form-1 #password').value;
-                }, 'Those passwords didn’t match. Try again.')
-            ],
-            onSubmit: function (data) {
-                console.log(data);
+$(document).ready(
+    function () {
+        $('.section-home').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.header__text-box').removeClass('animated zoomInDown');
+                } else {
+                    $('.header__text-box').addClass('animated zoomInDown');
+                }
+            }, {
+                offset: '-5%'
             }
-        });
-    Validator
-        ({
-            form: '#form-2',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-                Validator.isEmail('#email'),
-                Validator.minLength('#password', 6),
-            ],
-            onSubmit: function (data) {
-                console.log(data);
+        )
+        $('.section-about').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.content-left').addClass('animated fadeInRight');
+                    $('.content-right').addClass('animated fadeInRight');
+                } else {
+                    $('.content-left').removeClass('animated fadeInRight');
+                    $('.content-right').removeClass('animated fadeInRight');
+                }
+            }, {
+                offset: '90%'
             }
-        });
-});
+        )
+        $('.section-social').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.social-ctn').addClass('animated fadeIn');
+                } else {
+                    $('.social-ctn').removeClass('animated fadeIn');
+                }
+            }, {
+                offset: '80%'
+            }
+        )
+        $('.section-feature').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.feature-ctn').addClass('animated fadeInUp');
+                } else {
+                    $('.feature-ctn').removeClass('animated fadeInUp');
+                }
+            }, {
+                offset: '80%'
+            }
+        )
+        $('.section-form').waypoint(
+            function (direction) {
+                if (direction == "down") {
+                    $('.form-left').addClass('animated fadeInUp');
+                    $('.form-right').addClass('animated fadeInUp');
+                } else {
+                    $('.form-left').removeClass('animated fadeInUp');
+                    $('.form-right').removeClass('animated fadeInUp');
+                }
+            }, {
+                offset: '80%'
+            }
+        )
+    })

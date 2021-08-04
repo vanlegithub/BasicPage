@@ -1,15 +1,3 @@
-@keyframes growth {
-  from {
-    opacity: 0;
-    height: calc(var(--percent) - 50%);
-  }
-
-  to {
-    opacity: 1;
-    height: var(--percent);
-  }
-}
-
 @keyframes slideInLeft {
   from {
     opacity: 0;

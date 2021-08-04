@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandingPageAdvanced</title>
+    <title>VanLeWebsite</title>
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="/assets/sass/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/assets/sass/style.css">
 
 </head>
 
@@ -39,21 +39,21 @@
                     </a>
                 </li>
                 <li><a onclick="showErrorToast();" href="#home"><i class="far fa-bell"></i></a></li>
-                <li><a onclick="showErrorToast();" href="#contact">LOGIN</a></li>
-                <li><a onclick="showErrorToast();" href="#contact">REGISTER</a></li>
+                <li><a onclick="showErrorToast();" href="#form">LOGIN</a></li>
+                <li><a onclick="showErrorToast();" href="#form">REGISTER</a></li>
             </ul>
         </div>
-        <header class="header">
-            <div class="header__text-box">
+        <div class="header">
+            <div class="header__text-box wow animated zoomInDown">
                 <h3 class="heading-primary">
-                    <span class="heading-primary--main">Landing Page<br>Advanced</span>
-                    <span class="heading-primary--sub">Design by VanLe</span>
+                    <span class="heading-primary--sub">Welcome</span>
+                    <span class="heading-primary--main">I'm <b class="heading-primary--color">Van</b> Le</span>
                 </h3>
                 <a href="https://github.com/vanlegithub/LandingPageAdvanced" target="_blank" class="btn btn--infor">
                     More information
                 </a>
             </div>
-        </header>
+        </div>
     </section>
 
     <main>
@@ -62,7 +62,7 @@
                 <h2 class="heading-secondary">About me</h2>
             </div>
             <div class="content-ctn">
-                <div class="content-left">
+                <div class="content-left wow">
                     <h3 class="heading-summary align-title-small">Introduction</h3>
                     <p class="paragraph">
                         I am a 4th year student at HCMUS-VNU majoring in Computer Networking. I have a passion and
@@ -87,10 +87,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-right">
-                    <img src="/assets/img/minipic1.jpg" alt="photo1" class="content-right__photo content-right__photo--p1">
-                    <img src="/assets/img/minipic2.jpg" alt="photo2" class="content-right__photo content-right__photo--p2">
-                    <img src="/assets/img/minipic3.jpg" alt="photo3" class="content-right__photo content-right__photo--p3">
+                <div class="content-right wow">
+                    <img src="/assets/img/minipic1.jpg" alt="photo1"
+                        class="content-right__photo content-right__photo--p1">
+                    <img src="/assets/img/minipic2.jpg" alt="photo2"
+                        class="content-right__photo content-right__photo--p2">
+                    <img src="/assets/img/minipic3.jpg" alt="photo3"
+                        class="content-right__photo content-right__photo--p3">
                 </div>
             </div>
         </section>
@@ -99,7 +102,7 @@
             <div class="align-title-big">
                 <h2 class="heading-secondary">Socials</h2>
             </div>
-            <div class="social-ctn">
+            <div class="social-ctn wow">
                 <div class="social-box">
                     <div class="social-box--heading">
                         <a href="https://www.facebook.com/vanleprofile/" target="_blank">
@@ -271,7 +274,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section-form">
+        <section id="form" class="section-form">
             <div class="align-title-small">
                 <h2 class="heading-secondary">Register</h2>
             </div>
@@ -358,8 +361,10 @@
     </main>
 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
-    <script type="module" src="/js/script.js"></script>
-    <script src="/js/toast.js"></script>
+    <script src="/assets/js/toast.js"></script>
+    <script src="/assets/vendor/wow/wow.min.js"></script>
+    <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
 </body>
 
 </html>
