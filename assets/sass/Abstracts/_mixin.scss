@@ -1,0 +1,77 @@
+@mixin respond ($breakpoint) {
+
+    /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+    @if $breakpoint==mini-mobile {
+        @media (min-width: 320px) and (max-width: 480px) {
+            @content;
+        }
+    }
+
+    /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+    @if $breakpoint==mobile {
+        @media (min-width: 481px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    /* 
+  Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+    @if $breakpoint==l-tablet {
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+    @if $breakpoint==p-tablet {
+        @media (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    /* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+    @if $breakpoint==laptop {
+        @media (min-width: 1025px) and (max-width: 1280px) {
+            @content;
+        }
+    }
+
+    /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+    @if $breakpoint==desktop {
+        @media (min-width: 1281px) {
+            @content;
+        }
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

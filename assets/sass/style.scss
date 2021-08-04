@@ -1,0 +1,27 @@
+// define colors, variables
+@import './Abstracts/variables';
+// define function clearfix, abs center right
+@import './Abstracts/mixin';
+// default body, html
+@import './Base/base';
+// set up style text
+@import './Base/typography';
+// edit header main home
+@import './Layout/header';
+// set up align default
+@import './Base/utilities';
+// define footer
+@import './Layout/footer';
+// define 5 section
+@import './Pages/home';
+// define animation
+@import './Abstracts/animation';
+
+// Define function components
+@import './Components/button';
+@import './Components/about';
+@import './Components/social';
+@import './Components/feature';
+@import './Components/navigation';
+@import './Components/toast';
+@import './Components/form';
