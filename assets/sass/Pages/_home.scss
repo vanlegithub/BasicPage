@@ -1,48 +1,49 @@
-.section-home {}
+.section-home {
+}
 
 .section-about {
-    padding: 3rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 5rem 1rem;
 }
 
 .section-social {
-    background-image: url("/assets/img/background2.jpg");
-    background-size: cover;
-    padding: 2rem 1rem 9.5rem 1rem;
+  background-image: url("/assets/img/background2.jpg");
+  background-size: cover;
+  padding: 2rem 1rem 9.5rem 1rem;
 }
 
 .section-feature {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .section-content {
-    background-color: $color-gray-light;
-    padding: 3rem 2rem 1rem 2rem;
+  background-color: $color-gray-light;
+  padding: 3rem 2rem 1rem 2rem;
 
-    @include respond (mini-mobile) {
-        font-size: 62.5%;
-    }
+  @include respond(mini-mobile) {
+    font-size: 62.5%;
+  }
 
-    @include respond (mobile) {
-        font-size: 62.5%;
-    }
+  @include respond(mobile) {
+    font-size: 62.5%;
+  }
 
-    @include respond (p-tablet) {
-        font-size: 75%;
-    }
+  @include respond(p-tablet) {
+    font-size: 75%;
+  }
 
-    @include respond (laptop) {
-        font-size: 87.5%;
-    }
+  @include respond(laptop) {
+    font-size: 87.5%;
+  }
 
-    @include respond (desktop) {
-        font-size: 100%;
-    }
+  @include respond(desktop) {
+    font-size: 100%;
+  }
 }
 
 .section-form {
-    padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 .section-contact {
-    padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }

@@ -1,55 +1,55 @@
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: $color-black;
-    padding: 0.6rem 2.5rem;
-    border-radius: 50px;
-    cursor: pointer;
-    min-width: 100px;
-    transition: all .2s ease;
-    user-select: none;
-    text-align: center;
-    box-shadow: 0 5px 3px rgba($color-black, .2);
-    margin-bottom: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $color-black;
+  padding: 0.6rem 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 100px;
+  transition: all 0.2s ease;
+  user-select: none;
+  text-align: center;
+  box-shadow: 0 5px 3px rgba($color-black, 0.2);
+  margin-bottom: 0.5rem;
 
-    &--size-l {
-        padding: 1rem 3.5rem;
-    }
+  &--size-l {
+    padding: 1rem 3.5rem;
+  }
 
-    &--size-s {
-        padding: 0.3rem 1.7rem;
-    }
+  &--size-s {
+    padding: 0.3rem 1.7rem;
+  }
 
-    &:hover {
-        opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &+& {
-        margin-left: 1.6rem;
-    }
+  & + & {
+    margin-left: 1.6rem;
+  }
 
-    &--success {
-        background-color: $color-blue-dark;
-    }
+  &--success {
+    background-color: $color-blue-dark;
+  }
 
-    &--warn {
-        background-color: $color-warn;
-    }
+  &--warn {
+    background-color: $color-warn;
+  }
 
-    &--deny {
-        background-color: rgba($color-deny, 0.6);
-    }
+  &--deny {
+    background-color: rgba($color-deny, 0.6);
+  }
 
-    &--infor {
-        background-color: $color-white;
-    }
+  &--infor {
+    background-color: $color-white;
+  }
 
-    &--disabled,
-    &[disabled] {
-        opacity: 0.5 !important;
-        pointer-events: none;
-    }
+  &--disabled,
+  &[disabled] {
+    opacity: 0.5 !important;
+    pointer-events: none;
+  }
 }

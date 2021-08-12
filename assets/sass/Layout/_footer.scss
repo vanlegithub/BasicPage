@@ -1,67 +1,66 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    height: 10rem;
-    font-size: 1rem;
-    overflow: hidden;
-    padding: 0 5rem;
-    color: $color-white;    
-    background-color: $color-black;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0 5rem;
+  color: $color-white;
+  background-color: $color-black;
 
-    &__logo-box {
-        flex-basis: 45%;
-        margin: auto;
+  &__logo-box {
+    flex-basis: 45%;
+    margin: auto;
+  }
+
+  &__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &__navigation {
+    padding-top: 2rem;
+    flex-basis: 45%;
+    margin: auto;
+    text-align: right;
+  }
+
+  &__list {
+    list-style: none;
+
+    @include respond(mobile) {
+      display: none;
     }
 
-    &__logo {
-        width: 6rem;
-        height: 6rem;
+    @include respond(mini-mobile) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__copyright {
+    padding-top: 2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
     }
 
-    &__navigation {
-        padding-top: 2rem;
-        flex-basis: 45%;
-        margin: auto;
-        text-align: right;
+    &:hover {
+      opacity: 0.8;
     }
-
-    &__list {
-        list-style: none;
-
-        @include respond (mobile) {
-            display: none;
-        }
-
-        @include respond (mini-mobile) {
-            display: none;
-        }
-    }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 3rem;
-        }
-    }
-
-    &__copyright {
-        padding-top: 2rem;
-    }
-
-    &__link {
-
-        &:link,
-        &:visited {
-            color: $color-white;
-            text-transform: uppercase;
-            text-decoration: none;
-            display: inline-block;
-            transition: all .2s;
-        }
-
-        &:hover {
-            opacity: 0.8;
-        }
-    }
+  }
 }

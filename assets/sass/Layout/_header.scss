@@ -1,21 +1,21 @@
 .header {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    background-image: url("/assets/img/background1.jpg");
+  display: flex;
+  position: relative;
+  height: 100vh;
+  background-image: url("/assets/img/background1.jpg");
 
-    background-size: cover;
-    background-position: top;
-    z-index: 10;
+  background-size: cover;
+  background-position: top;
+  z-index: 10;
 
-    &__text-box {
-        margin: auto;
-        text-align: center;
-    }
+  &__text-box {
+    margin: auto;
+    text-align: center;
+  }
 
-    &__logo {
-        display: none;
-        width: 2rem;
-        height: 2rem;
-    }
+  &__logo {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+  }
 }
