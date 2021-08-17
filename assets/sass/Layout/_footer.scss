@@ -1,10 +1,13 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 10rem;
-  font-size: 1rem;
   overflow: hidden;
+
+  height: 10rem;
   padding: 0 5rem;
+
+  font-size: 1rem;
+
   color: $color-white;
   background-color: $color-black;
 
@@ -22,6 +25,7 @@
     padding-top: 2rem;
     flex-basis: 45%;
     margin: auto;
+
     text-align: right;
   }
 
@@ -52,10 +56,13 @@
   &__link {
     &:link,
     &:visited {
-      color: $color-white;
+      display: inline-block;
+
       text-transform: uppercase;
       text-decoration: none;
-      display: inline-block;
+
+      color: $color-white;
+
       transition: all 0.2s;
     }
 

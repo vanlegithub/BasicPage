@@ -11,26 +11,27 @@
   @include respond(mobile) {
     height: 28rem;
   }
-
   @include respond(mini-mobile) {
     height: 27rem;
   }
 
   &__side {
     position: absolute;
+
     height: 27rem;
     width: 100%;
-    border-radius: 5rem;
-    transition: all 0.8s ease;
     overflow: hidden;
-    backface-visibility: hidden;
+    border-radius: 5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
     color: $color-white;
+
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
 
     @include respond(mobile) {
       height: 24rem;
     }
-
     @include respond(mini-mobile) {
       height: 23rem;
     }
@@ -43,7 +44,6 @@
       @include respond(mini-mobile) {
         display: none;
       }
-
       @include respond(mobile) {
         display: none;
       }
@@ -81,7 +81,6 @@
     @include respond(mobile) {
       height: 12rem;
     }
-
     @include respond(mini-mobile) {
       height: 11rem;
     }
@@ -111,21 +110,22 @@
   }
 
   &__heading {
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+
     font-size: 1.5rem;
     font-weight: 350;
     text-align: right;
     text-transform: uppercase;
+
     color: $color-white;
-    position: absolute;
-    top: 7rem;
-    right: 2rem;
     width: 75%;
 
     @include respond(mobile) {
       font-size: 1rem;
       text-align: right;
     }
-
     @include respond(mini-mobile) {
       font-size: 0.9rem;
       text-align: right;
@@ -133,8 +133,9 @@
   }
 
   &__heading-span {
-    border-radius: 5rem;
     padding: 0.3rem 1.3rem;
+    border-radius: 5rem;
+
     -webkit-box-decoration-break: clone;
 
     &--1 {
@@ -183,7 +184,6 @@
         @include respond(mobile) {
           font-size: 0.9rem;
         }
-
         @include respond(mini-mobile) {
           font-size: 0.8rem;
         }
@@ -192,19 +192,21 @@
   }
 
   &__cta {
-    margin-top: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+    margin-top: 3rem;
     width: 90%;
+
+    text-align: center;
+    transform: translate(-50%, -50%);
   }
 
   &__price-box {
+    margin-bottom: 8rem;
     text-align: center;
     color: $color-white;
-    margin-bottom: 8rem;
   }
 
   &__price-only {
@@ -213,9 +215,10 @@
   }
 
   &__price-value {
+    margin-bottom: 5rem;
+
     font-size: 3rem;
     font-weight: 100;
-    margin-bottom: 5rem;
   }
 
   &:hover &__side--front {
@@ -224,7 +227,6 @@
     @include respond(mobile) {
       transform: none;
     }
-
     @include respond(mini-mobile) {
       transform: none;
     }

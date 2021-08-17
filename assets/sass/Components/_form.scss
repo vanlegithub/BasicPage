@@ -37,10 +37,11 @@
 .form {
   padding: 2rem;
   text-align: center;
+  align-self: center;
+
+  box-shadow: 0 2px 10px 0 rgba(51, 62, 73, 0.1);
   background: $color-white;
   border-radius: 2px;
-  align-self: center;
-  box-shadow: 0 2px 10px 0 rgba(51, 62, 73, 0.1);
 }
 
 .form .heading {
@@ -48,19 +49,21 @@
 }
 
 .form .desc {
+  margin-top: 1.6rem;
+
   text-align: center;
-  color: $color-text;
   font-size: 1rem;
   font-weight: lighter;
   line-height: 2.4rem;
-  margin-top: 1.6rem;
   font-weight: 300;
+
+  color: $color-text;
 }
 
 .form-group {
   display: flex;
-  margin-bottom: 5px;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 
 .form-label,
@@ -69,8 +72,9 @@
 }
 
 .form-label {
-  font-weight: 700;
   padding-bottom: 6px;
+
+  font-weight: 700;
   line-height: 1.8rem;
   font-size: 1.2rem;
 }
@@ -78,10 +82,12 @@
 .form-control {
   height: 30px;
   padding: 0.5rem;
+  outline: none;
+
+  font-size: 1rem;
+
   border: 1px solid $color-primary-dark;
   border-radius: 3px;
-  outline: none;
-  font-size: 1rem;
 
   &:hover {
     border-color: $color-primary-dark;
@@ -97,22 +103,26 @@
 }
 
 .form-message {
+  padding: 0.4rem 0 0;
+
   font-size: 1rem;
   line-height: 1.6rem;
-  padding: 0.4rem 0 0;
 }
 
 .form-submit {
-  outline: none;
-  background-color: $color-primary-dark;
   margin-top: 1rem;
   padding: 1rem 1.3rem;
-  font-weight: 600;
-  color: $color-gray-light;
-  border: none;
   width: 100%;
-  font-size: 1rem;
   border-radius: 8px;
+  outline: none;
+  border: none;
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  color: $color-gray-light;
+  background-color: $color-primary-dark;
+
   cursor: pointer;
 
   &:hover {

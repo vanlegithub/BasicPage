@@ -8,77 +8,65 @@
 .toast {
   display: flex;
   align-items: center;
-  background-color: $color-white;
   border-radius: 2px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba($color-primary-dark, 0.3);
+
   padding: 1rem 0;
   min-width: 17rem;
   max-width: 32rem;
-  border-left: 4px solid;
-  box-shadow: 0 5px 8px rgba($color-primary-dark, 0.3);
+
+  background-color: $color-white;
   transition: all linear 0.3s;
 
   &--success {
     border-color: $color-success;
   }
-
   &--success &__icon {
     color: $color-success;
   }
-
   &--info {
     border-color: $color-infor;
   }
-
   &--info &__icon {
     color: $color-infor;
   }
-
   &--warning {
     border-color: $color-warn;
   }
-
   &--warning &__icon {
     color: $color-warn;
   }
-
   &--error {
     border-color: $color-deny;
   }
-
   &--error &__icon {
     color: $color-deny;
   }
-
   & + & {
     margin-top: 1rem;
   }
-
   &__icon {
     font-size: 1.5rem;
   }
-
   &__icon,
   &__close {
     padding: 0 1rem;
   }
-
   &__body {
     flex-grow: 1;
   }
-
   &__title {
     font-size: 1.3rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
   }
-
   &__msg {
     font-size: 1rem;
     color: $color-text;
     margin-top: 3px;
     line-height: 1.5;
   }
-
   &__close {
     font-size: 1.5rem;
     color: rgba($color-black, 0.3);

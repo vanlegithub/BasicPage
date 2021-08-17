@@ -1,14 +1,15 @@
 .section-home {
 }
 
-.section-about {
+.section-intro {
   padding: 3rem 1rem 5rem 1rem;
 }
 
 .section-social {
+  padding: 2rem 1rem 9.5rem 1rem;
+
   background-image: url("/assets/img/background2.jpg");
   background-size: cover;
-  padding: 2rem 1rem 9.5rem 1rem;
 }
 
 .section-feature {
@@ -16,8 +17,9 @@
 }
 
 .section-content {
-  background-color: $color-gray-light;
   padding: 3rem 2rem 1rem 2rem;
+
+  background-color: $color-gray-light;
 
   @include respond(mini-mobile) {
     font-size: 62.5%;

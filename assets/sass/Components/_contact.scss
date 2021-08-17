@@ -6,7 +6,6 @@
   @include respond(mini-mobile) {
     flex-wrap: wrap;
   }
-
   @include respond(mobile) {
     flex-wrap: wrap;
   }
@@ -17,13 +16,13 @@
   margin: 0;
   width: 100%;
   height: 450px;
+
   background-color: $color-white;
 
   @include respond(mini-mobile) {
     padding: 1rem 2rem;
     flex-basis: 100%;
   }
-
   @include respond(mobile) {
     padding: 1rem 2rem;
     flex-basis: 100%;
@@ -38,7 +37,6 @@
     padding: 1rem 2rem;
     flex-basis: 100%;
   }
-
   @include respond(mobile) {
     flex-basis: 100%;
   }
@@ -56,17 +54,17 @@
 }
 
 .contact-control {
-  height: unset;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  display: flex;
   border-radius: 0.6rem;
   border: 0.2rem solid $color-text;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: unset;
+
   font-weight: 500;
   font-size: 1rem;
-  display: flex;
-  width: 100%;
-  margin-bottom: 1rem;
 
   &::-webkit-input-placeholder {
     font-weight: 500;

@@ -7,45 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VanLePage</title>
-    <link rel="icon" href="assets/img/favicon.ico">
+    <!-- CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Sources local -->
+    <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="/assets/sass/style.css">
 
 </head>
 
 <body>
+    <!-- ToastMessage -->
+    <div id="toast"></div>
 
+    <!-- HomePage -->
     <section id="home" class="section-home">
-        <div id="toast"></div>
-        <div class="nav">
-            <ul class="nav-list">
+        <div class="navbar-ctn lazy">
+            <ul class="navbar-menu">
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#intro">INTRO</a></li>
                 <li>
-                    <a>MORE&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
+                    <a>MORE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
                     <ul class="subnav">
                         <li><a href="#social">SOCIAL</a></li>
                         <li><a href="#feature">FEATURE</a></li>
-                        <li><a href="#form">REGISTER</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </li>
             </ul>
-            <ul class="nav-list">
-                <li>
-                    <a onclick="showErrorToast();" href="#home">
-                        <i class="search-fast fas fa-search"></i>
-                    </a>
-                </li>
-                <li><a onclick="showErrorToast();" href="#home"><i class="far fa-bell"></i></a></li>
+            <ul class="navbar-menu">
                 <li><a onclick="showErrorToast();" href="#form">LOGIN</a></li>
                 <li><a onclick="showErrorToast();" href="#form">REGISTER</a></li>
             </ul>
         </div>
-        <div class="header">
-            <div class="header__text-box wow animated zoomInDown">
+        <div class="header lazy">
+            <div class="header__text-box animated zoomInDown">
                 <h3 class="heading-primary">
                     <span class="heading-primary--sub">Welcome</span>
                     <span class="heading-primary--main">I'm <b class="heading-primary--color">VAN</b> LE</span>
@@ -56,23 +53,21 @@
             </div>
         </div>
     </section>
-
+    <!-- ContentPage -->
     <main>
-        <section id="about" class="section-about">
+        <section id="intro" class="section-intro" loading="lazy">
             <div class="align-title-big">
-                <h2 class="heading-secondary">About me</h2>
+                <h2 class="heading-secondary">INTRODUCTION</h2>
             </div>
-            <div class="content-ctn">
-                <div class="content-left wow">
-                    <h3 class="heading-summary align-title-small">Introduction</h3>
+            <div class="content-ctn lazy">
+                <div class="content-left">
+                    <h3 class="heading-summary align-title-small">SUMMARY</h3>
                     <p class="paragraph">
                         I am a 4th year student at HCMUS-VNU majoring in Computer Networking. I have a passion and
                         interest in Web development, the goal of creating valuable products. My career objective is
-                        looking
-                        forward to working in a young, professional environment. Become a Senior front-end developer in
-                        the next 2 years. Turn into a full-stack developer within 5 years later. Hopefully I can
-                        contribute to
-                        the development of the company.
+                        looking forward to working in a young, professional environment. Become a Senior front-end
+                        developer in the next 2 years. Turn into a full-stack developer within 5 years later. Hopefully
+                        I can contribute to the development of the company.
                     </p>
                     <h3 class="heading-summary align-title-small">Favorites</h3>
                     <p class="paragraph">
@@ -88,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-right wow">
+                <div class="content-right">
                     <img src="/assets/img/minipic1.jpg" alt="photo1"
                         class="content-right__photo content-right__photo--p1">
                     <img src="/assets/img/minipic2.jpg" alt="photo2"
@@ -103,63 +98,58 @@
             <div class="align-title-big">
                 <h2 class="heading-secondary">Socials</h2>
             </div>
-            <div class="social-ctn wow">
-                <div class="social-box">
-                    <div class="social-box--heading">
+            <div class="social-ctn lazy">
+                <div class="social-item">
+                    <div class="social-item--heading">
                         <a href="https://www.facebook.com/vanleprofile/" target="_blank">
-                            <i class=" social-box__icon fab fa-facebook-square"></i>
+                            <i class=" social-item__icon fab fa-facebook-square"></i>
                         </a>
                         <h3>Facebook</h3>
                     </div>
                     <p>
-                        Facebook is an American online social media and social networking service owned by Facebook,
-                        Inc.
+                        Facebook is an American online social media and social networking service owned by Facebook,Inc.
                         Founded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates Eduardo
-                        Saverin,
-                        Andrew McCollum, Dustin Moskovitz, and Chris Hughes.
+                        Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.
                     </p>
                 </div>
-                <div class="social-box">
-                    <div class="social-box--heading">
+                <div class="social-item">
+                    <div class="social-item--heading">
                         <a href="https://www.instagram.com/__van.le__/" target="_blank">
-                            <i class=" social-box__icon fab fa-instagram-square"></i>
+                            <i class=" social-item__icon fab fa-instagram-square"></i>
                         </a>
                         <h3>Instagram</h3>
                     </div>
                     <p>
-                        Instagram (commonly abbreviated to IG, Insta or the gram) is an American photo and video sharing
-                        social networking service created by Kevin Systrom and Mike Krieger.
-                        In April 2012, Facebook acquired the service for approximately US$1 billion in cash and stock.
+                        Instagram (IG, Insta) is an American photo and video sharing social networking service created
+                        by Kevin Systrom and Mike Krieger. In April 2012, Facebook acquired the service for
+                        approximately US$1 billion in cash and stock.
                     </p>
                 </div>
-                <div class="social-box">
-                    <div class="social-box--heading">
+                <div class="social-item">
+                    <div class="social-item--heading">
                         <a href="https://github.com/vanlegithub/" target="_blank">
-                            <i class=" social-box__icon fab fa-github-square"></i>
+                            <i class=" social-item__icon fab fa-github-square"></i>
                         </a>
                         <h3>Github</h3>
                     </div>
                     <p>
                         GitHub, Inc. is a provider of Internet hosting for software development and version control
-                        using Git.
-                        It offers the distributed version control and source code management (SCM) functionality of Git,
-                        plus its own features.
-                        Headquartered in California, it has been a subsidiary of Microsoft since 2018.
+                        using Git. It offers the distributed version control and source code management (SCM)
+                        functionality of Git, plus its own features. Headquartered in California, it has been a
+                        subsidiary of Microsoft since 2018.
                     </p>
                 </div>
-                <div class="social-box">
-                    <div class="social-box--heading">
+                <div class="social-item">
+                    <div class="social-item--heading">
                         <a href="https://www.linkedin.com/in/vanleprofile/" target="_blank">
-                            <i class=" social-box__icon fab fa-linkedin"></i>
+                            <i class=" social-item__icon fab fa-linkedin"></i>
                         </a>
                         <h3>Linkedin</h3>
                     </div>
                     <p>
                         linkedIn is an American business and employment-oriented online service that operates via
-                        websites and mobile apps.
-                        Launched on May 5, 2003, the platform is mainly used for professional networking, and allows job
-                        seekers to post their
-                        CVs and employers to post jobs.
+                        websites and mobile apps. Launched on May 5, 2003, the platform is mainly used for professional
+                        networking, and allows job seekers to post their CVs and employers to post jobs.
                     </p>
                 </div>
             </div>
@@ -169,7 +159,7 @@
             <div class="align-title-big">
                 <h2 class="heading-secondary">Features</h2>
             </div>
-            <div class="feature-ctn">
+            <div class="feature-ctn lazy">
                 <div class="feature">
                     <div class="feature__side feature__side--front">
                         <div class="feature__picture feature__picture--1">
@@ -267,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="align-title-small">
+            <div id="react" class="align-title-small">
                 <div onclick="showThanksToast();" class="btn btn--success btn--size-s">Like <i
                         class="far fa-thumbs-up"></i></div>
                 <div onclick="showSorryToast();" class="btn btn--deny btn--size-s">Dislike <i
@@ -279,7 +269,7 @@
             <div class="align-title-small">
                 <h2 class="heading-secondary">Register</h2>
             </div>
-            <div class="form-ctn">
+            <div class="form-ctn lazy">
                 <div class="form-left">
                     <form action="" method="POST" class="form" id="form-1">
                         <h3 class="heading">CREATE ACCOUNT</h3>
@@ -337,11 +327,13 @@
             <div class="align-title-small">
                 <h2 class="heading-secondary">Contact</h2>
             </div>
-            <div class="contact-ctn">
-                <div class="maps-left wow">
-                    <div id="google-maps" style="width: 100%; height: 100%;"></div>
+            <div class="contact-ctn lazy">
+                <div class="maps-left">
+                    <iframe src="https://tinyurl.com/5vc74mfu" width="100%" height="450" style="border:0;"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
-                <div class="contact-right wow">
+                <div class="contact-right">
                     <form class="contact-form">
                         <input class="contact-control" type="text" name="Name" placeholder="Your Name">
                         <input class="contact-control" type="text" name="Email" placeholder="Email Address">
@@ -382,16 +374,19 @@
 
     </main>
 
+    <!-- sources vendor -->
     <script src="/assets/vendor/jquery/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/toast.js"></script>
-    <script src="/assets/vendor/maps/google-maps.js"></script>
-    <script src="/assets/vendor/wow/wow.min.js"></script>
     <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="/assets/js/validator.js"></script>
+    <script src="/assets/vendor/lazy/jquery.lazy.min.js"></script>
+    <script src="/assets/vendor/lazy/jquery.lazy.plugins.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap">
         </script>
-    <script type="module" src="/assets/js/script.js"></script>
+
+    <!-- sources local -->
+    <script src="/assets/js/validator.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/toast.js"></script>
 
 </body>
 

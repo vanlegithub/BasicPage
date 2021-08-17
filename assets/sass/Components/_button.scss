@@ -1,19 +1,22 @@
 .btn {
   display: inline-block;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: $color-black;
   padding: 0.6rem 2.5rem;
-  border-radius: 50px;
-  cursor: pointer;
-  min-width: 100px;
-  transition: all 0.2s ease;
-  user-select: none;
-  text-align: center;
-  box-shadow: 0 5px 3px rgba($color-black, 0.2);
   margin-bottom: 0.5rem;
+  border: none;
+  box-shadow: 0 5px 3px rgba($color-black, 0.2);
+
+  text-decoration: none;
+  text-align: center;
+
+  background-color: transparent;
+  color: $color-black;
+
+  border-radius: 50px;
+
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
 
   &--size-l {
     padding: 1rem 3.5rem;

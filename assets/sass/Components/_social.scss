@@ -7,47 +7,47 @@
   @include respond(mobile) {
     flex-direction: column;
   }
-
   @include respond(mini-mobile) {
     flex-direction: column;
   }
 }
 
-.social-box {
-  font-size: 1rem;
+.social-item {
   flex-basis: 22%;
   padding: 1.7rem;
+  border-radius: 5rem;
+
+  font-size: 1rem;
+  text-align: justify;
+
+  transition: all 0.2s;
+  background-color: rgba($color: $color-white, $alpha: 0.8);
 
   @include respond(mobile) {
     padding: 1rem 1rem 2rem 1rem;
     margin-top: 1rem;
   }
-
   @include respond(mini-mobile) {
     padding: 1rem 1rem 2rem 1rem;
     margin-top: 1rem;
   }
 
-  text-align: justify;
-  border-radius: 5rem;
-  transition: all 0.2s;
-  background-color: rgba($color: $color-white, $alpha: 0.8);
-
   &__icon {
-    font-size: 4rem;
     display: inline-block;
+    font-size: 4rem;
+
     background-color: $color-black;
     -webkit-background-clip: text;
     color: transparent;
   }
 
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-1rem) scale(1.1);
-  }
-
   &--heading {
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.5rem) scale(1.1);
   }
 }
