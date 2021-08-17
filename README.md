@@ -4,20 +4,20 @@
 
 ## Languages
 
-- Html, Css, Javascript
+- Html, Css, JavaScript
 
 ## Features
 
 - Responsive: b/w 320px to 1280px, 1281px to higher resolution desktops
-- Animation, Toast message, Form validation, Navigation bar
-- Popup content, Form contact, Lazy loading
+- Toast message, Form validation, Navigation bar
+- Form contact, Lazy loading, Animation Effects
 
 ## Codes
 
 - Class name BEM, SASS components, Flexbox model, Reusable components
-- Grid systems, Pseudo-classes, Minify code css, Image optimization, Modules Js
+- Pseudo-classes, Minify code css, Image optimization
 
-## References
+## References - Vendors
 
 - https://fontawesome.com/
 - https://www.w3schools.com/
@@ -33,7 +33,7 @@
 - https://css-tricks.com/snippets/html/glyphs/
 - https://imagecompressor.com/
 - https://picresize.com/
-- http://jquery.eisbehr.de/lazy/
+- https://wowjs.uk/
 
 ## More
 

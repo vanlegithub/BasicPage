@@ -1,27 +1,12 @@
 $(document).ready(function () {
-  $(function () {
-    $(".lazy").Lazy();
-  });
-  $(".section-home").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".header__text-box").removeClass("animated zoomInDown");
-      } else {
-        $(".header__text-box").addClass("animated zoomInDown");
-      }
-    },
-    {
-      offset: "-5%",
-    }
-  );
   $(".section-intro").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".content-left").addClass("animated fadeInRight");
-        $(".content-right").addClass("animated fadeInRight");
+        $(".content-left").addClass("animated");
+        $(".content-right").addClass("animated");
       } else {
-        $(".content-left").removeClass("animated fadeInRight");
-        $(".content-right").removeClass("animated fadeInRight");
+        $(".content-left").removeClass("animated");
+        $(".content-right").removeClass("animated");
       }
     },
     {
@@ -31,9 +16,9 @@ $(document).ready(function () {
   $(".section-social").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".social-ctn").addClass("animated fadeIn");
+        $(".social-ctn").addClass("animated");
       } else {
-        $(".social-ctn").removeClass("animated fadeIn");
+        $(".social-ctn").removeClass("animated");
       }
     },
     {
@@ -43,8 +28,8 @@ $(document).ready(function () {
   $(".section-feature").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".feature-ctn").addClass("animated fadeInUp");
-        $("#react").addClass("animated fadeInUp");
+        $(".feature-ctn").addClass("animated");
+        $("#react").addClass("animated");
       } else {
         $(".feature-ctn").removeClass("animated fadeInUp");
         $("#react").removeClass("animated fadeInUp");
@@ -57,11 +42,11 @@ $(document).ready(function () {
   $(".section-form").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".form-left").addClass("animated fadeInUp");
-        $(".form-right").addClass("animated fadeInUp");
+        $(".form-left").addClass("animated");
+        $(".form-right").addClass("animated");
       } else {
-        $(".form-left").removeClass("animated fadeInUp");
-        $(".form-right").removeClass("animated fadeInUp");
+        $(".form-left").removeClass("animated");
+        $(".form-right").removeClass("animated");
       }
     },
     {
@@ -71,11 +56,11 @@ $(document).ready(function () {
   $(".section-contact").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".maps-left").addClass("animated fadeInUp");
-        $(".contact-right").addClass("animated fadeInRight");
+        $(".maps-left").addClass("animated");
+        $(".contact-right").addClass("animated");
       } else {
-        $(".maps-left").removeClass("animated fadeInUp");
-        $(".contact-right").removeClass("animated fadeInRight");
+        $(".maps-left").removeClass("animated");
+        $(".contact-right").removeClass("animated");
       }
     },
     {
@@ -83,4 +68,6 @@ $(document).ready(function () {
     }
   );
 });
+
+new WOW().init();
 function initMap() {}

@@ -23,7 +23,7 @@
 
     <!-- HomePage -->
     <section id="home" class="section-home">
-        <div class="navbar-ctn lazy">
+        <div class="navbar-ctn">
             <ul class="navbar-menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#intro">INTRO</a></li>
@@ -41,8 +41,8 @@
                 <li><a onclick="showErrorToast();" href="#form">REGISTER</a></li>
             </ul>
         </div>
-        <div class="header lazy">
-            <div class="header__text-box animated zoomInDown">
+        <div class="header">
+            <div class="header__text-box">
                 <h3 class="heading-primary">
                     <span class="heading-primary--sub">Welcome</span>
                     <span class="heading-primary--main">I'm <b class="heading-primary--color">VAN</b> LE</span>
@@ -55,12 +55,12 @@
     </section>
     <!-- ContentPage -->
     <main>
-        <section id="intro" class="section-intro" loading="lazy">
+        <section id="intro" class="section-intro">
             <div class="align-title-big">
                 <h2 class="heading-secondary">INTRODUCTION</h2>
             </div>
-            <div class="content-ctn lazy">
-                <div class="content-left">
+            <div class="content-ctn">
+                <div class="content-left wow fadeInRight">
                     <h3 class="heading-summary align-title-small">SUMMARY</h3>
                     <p class="paragraph">
                         I am a 4th year student at HCMUS-VNU majoring in Computer Networking. I have a passion and
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-right">
+                <div class="content-right wow fadeInRight">
                     <img src="/assets/img/minipic1.jpg" alt="photo1"
                         class="content-right__photo content-right__photo--p1">
                     <img src="/assets/img/minipic2.jpg" alt="photo2"
@@ -98,7 +98,7 @@
             <div class="align-title-big">
                 <h2 class="heading-secondary">Socials</h2>
             </div>
-            <div class="social-ctn lazy">
+            <div class="social-ctn wow fadeIn">
                 <div class="social-item">
                     <div class="social-item--heading">
                         <a href="https://www.facebook.com/vanleprofile/" target="_blank">
@@ -159,7 +159,7 @@
             <div class="align-title-big">
                 <h2 class="heading-secondary">Features</h2>
             </div>
-            <div class="feature-ctn lazy">
+            <div class="feature-ctn wow fadeInUp">
                 <div class="feature">
                     <div class="feature__side feature__side--front">
                         <div class="feature__picture feature__picture--1">
@@ -269,8 +269,8 @@
             <div class="align-title-small">
                 <h2 class="heading-secondary">Register</h2>
             </div>
-            <div class="form-ctn lazy">
-                <div class="form-left">
+            <div class="form-ctn">
+                <div class="form-left wow fadeInUp">
                     <form action="" method="POST" class="form" id="form-1">
                         <h3 class="heading">CREATE ACCOUNT</h3>
                         <div class="spacer"></div>
@@ -301,7 +301,7 @@
                         <div onclick="showErrorToast();" class="form-submit">CREATE</div>
                     </form>
                 </div>
-                <div class="form-right">
+                <div class="form-right wow fadeInUp">
                     <form action="" method="POST" class="form" id="form-2">
                         <h3 class="heading">SIGN IN</h3>
                         <div class="spacer"></div>
@@ -327,13 +327,13 @@
             <div class="align-title-small">
                 <h2 class="heading-secondary">Contact</h2>
             </div>
-            <div class="contact-ctn lazy">
-                <div class="maps-left">
+            <div class="contact-ctn">
+                <div class="maps-left wow fadeInUp">
                     <iframe src="https://tinyurl.com/5vc74mfu" width="100%" height="450" style="border:0;"
                         allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right wow fadeInRight">
                     <form class="contact-form">
                         <input class="contact-control" type="text" name="Name" placeholder="Your Name">
                         <input class="contact-control" type="text" name="Email" placeholder="Email Address">
@@ -377,8 +377,7 @@
     <!-- sources vendor -->
     <script src="/assets/vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="/assets/vendor/lazy/jquery.lazy.min.js"></script>
-    <script src="/assets/vendor/lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="/assets/vendor/wow/wow.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap">
         </script>
