@@ -1,10 +1,8 @@
-# Personal project - LandingPageAdvanced
+# Personal project - BasicPage
 
-## Link public https://landingpage-advanced.web.app/
+## Link Demo
 
-## Languages
-
-- Html, Css, JavaScript
+- https://landingpage-advanced.web.app/
 
 ## Features
 
@@ -29,7 +27,6 @@
 - https://www.minifier.org/
 - http://imakewebthings.com/waypoints/
 - https://developer.mozilla.org/en-US/
-- https://visme.co/blog/website-color-schemes/
 - https://css-tricks.com/snippets/html/glyphs/
 - https://imagecompressor.com/
 - https://picresize.com/
